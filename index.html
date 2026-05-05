@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falconry in Ireland — Ancient Art, Living Heritage</title>
+    <meta name="description" content="Discover the ancient art of falconry in the heart of Ireland. Hands-on raptor experiences, heritage walks, and UNESCO-recognised tradition in the Irish countryside.">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap"></noscript>
+    
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+  <link rel="preload" as="style" href="css/global.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/global.css"></noscript>
+  <link rel="preload" as="image" href="img/b46e9d72-index-hero-hawk-landing.webp" fetchpriority="high">
+</head>
+<body class="bg-[var(--color-bg)] text-[var(--color-text)]" style="font-family: var(--font-body);">
+<header x-data="{}" data-no-drag="true" class="fixed top-0 left-0 right-0 z-50 w-full" style="background-color: var(--color-primary, #2C4A1E); border-bottom: 2px solid var(--color-secondary, #C8922A);" id="header-block">
+  
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded focus:text-sm">
+    Skip to content
+  </a>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="content-block">
+    <div class="flex items-center justify-between h-16 lg:h-20" id="content-block-2">
+
+      
+      <a href="/" data-page-link="index" class="flex items-center gap-3 group flex-shrink-0" aria-label="Falconry in Ireland — Home">
+        
+        <div class="w-9 h-9 flex-shrink-0" style="color: var(--color-secondary, #C8922A);" id="content-block-3">
+          <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M28 4c-1.2 0-2.3.4-3.1 1.1L10 16.5l2.5 1.5 5-3.5-2 6 3-1-1.5 5 2.5-1.5L18 30l3.5-2-1 5 3-3 1 4 2-5 2 3V8.5C28.5 6 28.3 4 28 4z"></path>
+            <path d="M8 22c0 5.5 4 10.5 9 12-3-3-4.5-7-4-11L8 22z" opacity=".7"></path>
+          </svg>
+        </div>
+        
+        <div class="flex flex-col leading-tight" id="content-block-4">
+          <span class="font-bold text-base lg:text-lg tracking-wide" style="color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
+            Falconry
+          </span>
+          <span class="text-xs font-medium tracking-widest uppercase" style="color: var(--color-secondary, #C8922A); font-family: 'Playfair Display', Georgia, serif;">
+            in Ireland
+          </span>
+        </div>
+      </a>
+
+      
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation" id="main-navigation">
+
+        
+        <div class="relative" x-data="{open: false}" @mouseenter="open = true" @mouseleave="open = false" id="content-block-5">
+          <div class="flex items-center" id="content-block-6">
+            <a href="/falconry-experiences" data-page-link="falconry-experiences" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+              Experiences
+            </a>
+            <svg class="w-4 h-4 ml-0.5 transition-transform duration-200 cursor-pointer flex-shrink-0" :class="{'rotate-180': open}" @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+
+          
+          <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1" class="absolute top-full left-0 mt-1 rounded-md shadow-xl py-2 min-w-[220px] z-50" style="display:none; background-color: #1e3314; border: 1px solid var(--color-secondary, #C8922A); border-top: 2px solid var(--color-secondary, #C8922A);" id="content-block-7">
+            <a href="/beginner-sessions" data-page-link="beginner-sessions" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Beginner Sessions
+            </a>
+            <a href="/heritage-walks" data-page-link="heritage-walks" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Heritage Walks
+            </a>
+            <a href="/private-group-bookings" data-page-link="private-group-bookings" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Private &amp; Group Bookings
+            </a>
+          </div>
+        </div>
+
+        
+        <a href="/falconry-heritage" data-page-link="falconry-heritage" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Heritage
+        </a>
+
+        
+        <a href="/our-raptors" data-page-link="our-raptors" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Our Raptors
+        </a>
+
+        
+        <a href="/about-us" data-page-link="about-us" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          About Us
+        </a>
+
+        
+        <a href="/blog" data-page-link="blog-listing" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Blog
+        </a>
+
+        
+        </nav></div></div></header>
+
+<main id="main-content">
+
+    
+    <section id="hero-section" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <img fetchpriority="high" src="img/b46e9d72-index-hero-hawk-landing.webp" s="" leather="" gloved="" hand="" in="" the="" misty="" irish="" countryside="" at="" golden="" hour,="" dramatic="" low-angle="" perspective,="" soft="" morning="" fog="" rolling="" over="" green="" hills,="" rich="" warm="" amber="" and="" forest="" tones,="" cinematic="" wide-angle="" photography,="" shallow="" depth="" of="" field="" with="" bokeh="" background"="" alt="A hawk landing on a falconer's gloved hand in the Irish countryside" class="absolute inset-0 w-full h-full object-cover object-center" decoding="async">
+        
+        <div class="absolute inset-0 bg-[var(--color-primary)] opacity-60" id="content-block"></div>
+        
+        <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)] via-transparent to-transparent opacity-80" id="content-block-2"></div>
+
+        <div id="hero-content" class="relative z-10 text-center px-6 max-w-5xl mx-auto">
+            
+            <div id="hero-badge" class="inline-flex items-center gap-2 bg-[var(--color-secondary)] text-[var(--color-text-on-secondary)] text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                UNESCO Intangible Cultural Heritage
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight" style="font-family: var(--font-display);">
+                Where Ancient <br>
+                <em class="text-[var(--color-secondary)] not-italic">Wings</em> Soar
+            </h1>
+
+            <p class="text-xl md:text-2xl text-white opacity-90 max-w-2xl mx-auto mb-4 leading-relaxed font-light">
+                Experience the timeless art of falconry in the heart of Ireland's wild, misty landscapes — a living heritage passed down through generations.
+            </p>
+            <p class="text-base text-white opacity-70 mb-12 max-w-xl mx-auto">
+                Shannonbridge, Co. Offaly — Ireland's premier falconry destination
+            </p>
+
+            <div id="hero-cta" class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="/falconry-experiences" data-page-link="falconry-experiences" class="inline-flex items-center gap-3 bg-[var(--color-secondary)] hover:bg-[var(--color-secondary-dark)] text-[var(--color-text-on-secondary)] font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path>
+                    </svg>
+                    Book an Experience
+                </a>
+                <a href="/falconry-heritage" data-page-link="falconry-heritage" class="inline-flex items-center gap-3 bg-white bg-opacity-15 hover:bg-opacity-25 text-white border border-white border-opacity-40 font-medium text-lg px-8 py-4 rounded-full transition-all duration-300 backdrop-blur-sm">
+                    Discover Our Heritage
+                </a>
+            </div>
+        </div>
+
+        
+        <div id="hero-scroll" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white opacity-60">
+            <span class="text-xs uppercase tracking-widest">Scroll</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 animate-bounce" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+            </svg>
+        </div>
+    </section>
+
+    
+    <section id="intro-strip" class="bg-[var(--color-primary)] py-10">
+        <div class="max-w-6xl mx-auto px-6" id="content-block-3">
+            <ul id="trust-items" class="flex flex-wrap justify-center gap-8 md:gap-16" role="list">
+                <li class="flex items-center gap-3 text-[var(--color-text-on-primary)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                    <span class="font-medium text-sm md:text-base">UNESCO Recognised Heritage</span>
+                </li>
+                <li class="flex items-center gap-3 text-[var(--color-text-on-primary)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+                    </svg>
+                    <span class="font-medium text-sm md:text-base">Experiences Year-Round</span>
+                </li>
+                <li class="flex items-center gap-3 text-[var(--color-text-on-primary)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+                    </svg>
+                    <span class="font-medium text-sm md:text-base">All Ages Welcome</span>
+                </li>
+                <li class="flex items-center gap-3 text-[var(--color-text-on-primary)]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                    </svg>
+                    <span class="font-medium text-sm md:text-base">Shannonbridge, Co. Offaly</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section id="about-intro" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center" id="content-block-4">
+            <div id="about-text" class="order-2 md:order-1">
+                <span class="text-[var(--color-secondary)] text-sm font-semibold uppercase tracking-widest mb-4 block">A Living Tradition</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[var(--color-primary)] mb-6 leading-tight" style="font-family: var(--font-display);">
+                    Over 4,000 Years of Bond Between Raptor &amp; Human
+                </h2>
+                <p class="text-[var(--color-text-light)] text-lg leading-relaxed mb-6">
+                    Falconry is one of humanity's oldest partnerships — a dialogue of trust between falconer and bird, refined over millennia. In Ireland, this art has flourished amid rolling green hills, ancient bogs, and mist-laden mornings, weaving itself into the cultural fabric of the land.
+                </p>
+                <p class="text-[var(--color-text-light)] text-lg leading-relaxed mb-8">
+                    Recognised by UNESCO as Intangible Cultural Heritage of Humanity, falconry is not merely a sport — it is a philosophy, a way of reading nature, and a bridge between past and present.
+                </p>
+                <a href="/falconry-heritage" data-page-link="falconry-heritage" class="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold text-base hover:gap-4 transition-all duration-200 border-b-2 border-[var(--color-secondary)] pb-1">
+                    Explore the Heritage
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+                    </svg>
+                </a>
+            </div>
+            <div id="about-image" class="order-1 md:order-2 relative">
+                <div class="absolute -top-6 -left-6 w-48 h-48 bg-[var(--color-secondary)] opacity-10 rounded-full blur-3xl" id="content-block-5"></div>
+                <img src="img/21ddb744-index-about-falconer-portrait.webp" alt="A falconer with a hawk perched on their gloved hand in an Irish field" class="w-full h-[480px] object-cover rounded-2xl shadow-2xl relative z-10" loading="lazy" decoding="async">
+                <div id="about-badge" class="absolute -bottom-6 -right-6 bg-[var(--color-secondary)] text-[var(--color-text-on-secondary)] rounded-2xl p-5 shadow-xl z-20">
+                    <p class="text-3xl font-bold" style="font-family: var(--font-display);">2026</p>
+                    <p class="text-xs font-semibold uppercase tracking-wide">Season Now Open</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="experiences-section" class="bg-[var(--color-bg-alt)] py-24 px-6">
+        <div class="max-w-6xl mx-auto" id="content-block-6">
+            <div id="experiences-header" class="text-center mb-16">
+                <span class="text-[var(--color-secondary)] text-sm font-semibold uppercase tracking-widest mb-4 block">What We Offer</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[var(--color-primary)] mb-5" style="font-family: var(--font-display);">
+                    Choose Your Experience
+                </h2>
+                <p class="text-[var(--color-text-light)] text-lg max-w-2xl mx-auto">
+                    From first-time encounters to immersive heritage walks, we offer unforgettable raptor experiences tailored to every visitor.
+                </p>
+            </div>
+
+            <div id="experiences-cards" class="grid md:grid-cols-3 gap-8">
+
+                
+                <article id="card-beginner" class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+                    <div class="relative overflow-hidden h-56" id="content-block-7">
+                        <img src="img/578f9e30-index-card-beginner-session.webp" alt="A beginner visitor with a kestrel on their gloved hand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                        <div class="absolute top-4 left-4 bg-[var(--color-secondary)] text-[var(--color-text-on-secondary)] text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" id="uppercase">
+                            Most Popular
+                        </div>
+                    </div>
+                    <div class="p-7 flex flex-col flex-1" id="beginner-sessions">
+                        <h3 class="text-2xl font-bold text-[var(--color-primary)] mb-3" style="font-family: var(--font-display);">Beginner Sessions</h3>
+                        <p class="text-[var(--color-text-light)] text-base leading-relaxed mb-6 flex-1">
+                            Your first step into the ancient world of falconry. Fly a hawk to the glove, learn the basics of training, and feel the exhilaration of a bird in free flight — no experience needed.
+                        </p>
+                        <ul id="beginner-features" class="space-y-2 mb-7" role="list">
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Suitable for all ages
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                90-minute guided session
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Equipment provided
+                            </li>
+                        </ul>
+                        <a href="/beginner-sessions" data-page-link="beginner-sessions" class="inline-flex items-center justify-center gap-2 w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                
+                <article id="card-heritage-walks" class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+                    <div class="relative overflow-hidden h-56" id="content-block-8">
+                        <img src="img/f5291b99-index-card-heritage-walk.webp" alt="A group on a falconry heritage walk through the Irish landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-7 flex flex-col flex-1" id="heritage-walks">
+                        <h3 class="text-2xl font-bold text-[var(--color-primary)] mb-3" style="font-family: var(--font-display);">Heritage Walks</h3>
+                        <p class="text-[var(--color-text-light)] text-base leading-relaxed mb-6 flex-1">
+                            Walk the ancient Irish countryside alongside our raptors. Guided by expert falconers, these immersive walks connect you with nature, history, and the living art of the hunt through storytelling and free-flight demonstrations.
+                        </p>
+                        <ul id="heritage-features" class="space-y-2 mb-7" role="list">
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                2-hour outdoor walk
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Historical storytelling
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Small groups only
+                            </li>
+                        </ul>
+                        <a href="/heritage-walks" data-page-link="heritage-walks" class="inline-flex items-center justify-center gap-2 w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                
+                <article id="card-private-group" class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+                    <div class="relative overflow-hidden h-56" id="content-block-9">
+                        <img src="img/5556b479-index-card-private-group.webp" alt="A private group enjoying a falconry experience in Ireland" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                        <div class="absolute top-4 left-4 bg-[var(--color-primary)] text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full" id="uppercase-2">
+                            Tailored
+                        </div>
+                    </div>
+                    <div class="p-7 flex flex-col flex-1" id="private-group">
+                        <h3 class="text-2xl font-bold text-[var(--color-primary)] mb-3" style="font-family: var(--font-display);">Private &amp; Group Bookings</h3>
+                        <p class="text-[var(--color-text-light)] text-base leading-relaxed mb-6 flex-1">
+                            Create a bespoke experience for families, corporate teams, or special events. From intimate birthday celebrations to large company team-building days, we tailor every detail to your group.
+                        </p>
+                        <ul id="group-features" class="space-y-2 mb-7" role="list">
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Fully bespoke programme
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Families, events &amp; corporate
+                            </li>
+                            <li class="flex items-center gap-2 text-sm text-[var(--color-text-light)]">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                                Groups of 2 to 50+
+                            </li>
+                        </ul>
+                        <a href="/private-group-bookings" data-page-link="private-group-bookings" class="inline-flex items-center justify-center gap-2 w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div id="experiences-cta" class="text-center mt-12">
+                <a href="/falconry-experiences" data-page-link="falconry-experiences" class="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold text-base hover:gap-4 transition-all duration-200 border-b-2 border-[var(--color-secondary)] pb-1">
+                    View All Experiences
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="landscape-band" class="relative h-[420px] overflow-hidden flex items-center justify-center">
+        <img src="img/2b8848d8-index-landscape-raptor-flight.webp" alt="A peregrine falcon soaring over the Irish landscape" class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" decoding="async">
+        <div class="absolute inset-0 bg-[var(--color-primary)] opacity-50" id="content-block-10"></div>
+        <div id="landscape-quote" class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-[var(--color-secondary)] mx-auto mb-6 opacity-80" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+            </svg>
+            <blockquote class="text-2xl md:text-3xl lg:text-4xl text-white font-light italic leading-relaxed" style="font-family: var(--font-display);">
+                "The flight of the hawk is a poem written across the sky — and in Ireland, that sky has never been more vivid."
+            </blockquote>
+            <p class="text-[var(--color-secondary)] font-semibold mt-6 text-sm uppercase tracking-widest">Falconry in Ireland</p>
+        </div>
+    </section>
+
+    
+    <section id="raptors-teaser" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto" id="content-block-11">
+            <div id="raptors-header" class="text-center mb-16">
+                <span class="text-[var(--color-secondary)] text-sm font-semibold uppercase tracking-widest mb-4 block">The Birds</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[var(--color-primary)] mb-5" style="font-family: var(--font-display);">
+                    Meet Our Raptors
+                </h2>
+                <p class="text-[var(--color-text-light)] text-lg max-w-2xl mx-auto">
+                    Our birds are the heart of everything we do. Each one is cared for, trained, and cherished as a partner in this ancient art.
+                </p>
+            </div>
+
+            <div id="raptors-grid" class="grid grid-cols-2 md:grid-cols-4 gap-6">
+
+                <article id="raptor-harris-hawk" class="relative group overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="img/67ae2444-index-raptor-harris-hawk.webp" s="" hawk="" with="" rich="" chestnut="" and="" black="" plumage="" perched="" on="" a="" weathered="" wooden="" post="" in="" soft="" golden="" irish="" countryside="" light,="" sharp="" detail="" feathers="" bright="" yellow="" talons,="" nature="" photography,="" shallow="" depth="" of="" field,="" warm="" amber="" bokeh="" background"="" alt="A Harris's hawk perched on a post" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" decoding="async">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" id="content-block-12"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5" id="harriss-hawk">
+                        <h3 class="text-white font-bold text-lg" style="font-family: var(--font-display);">Harris's Hawk</h3>
+                        <p class="text-white text-sm opacity-80">Parabuteo unicinctus</p>
+                    </div>
+                </article>
+
+                <article id="raptor-peregrine" class="relative group overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="img/c504d675-index-raptor-peregrine-falcon.webp" alt="A peregrine falcon perched on a stone wall" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" decoding="async">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" id="content-block-13"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5" id="peregrine-falcon">
+                        <h3 class="text-white font-bold text-lg" style="font-family: var(--font-display);">Peregrine Falcon</h3>
+                        <p class="text-white text-sm opacity-80">Falco peregrinus</p>
+                    </div>
+                </article>
+
+                <article id="raptor-barn-owl" class="relative group overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="img/27376cab-index-raptor-barn-owl.webp" alt="A barn owl with its distinctive white heart-shaped face" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" decoding="async">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" id="content-block-14"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5" id="barn-owl">
+                        <h3 class="text-white font-bold text-lg" style="font-family: var(--font-display);">Barn Owl</h3>
+                        <p class="text-white text-sm opacity-80">Tyto alba</p>
+                    </div>
+                </article>
+
+                <article id="raptor-red-kite" class="relative group overflow-hidden rounded-2xl cursor-pointer">
+                    <img src="img/919f0336-index-raptor-red-kite.webp" alt="A red kite soaring with its forked tail spread" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" decoding="async">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" id="content-block-15"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-5" id="red-kite">
+                        <h3 class="text-white font-bold text-lg" style="font-family: var(--font-display);">Red Kite</h3>
+                        <p class="text-white text-sm opacity-80">Milvus milvus</p>
+                    </div>
+                </article>
+
+            </div>
+
+            <div id="raptors-cta" class="text-center mt-12">
+                <a href="/our-raptors" data-page-link="our-raptors" class="inline-flex items-center gap-3 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold text-base px-8 py-4 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl">
+                    Meet All Our Birds
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="values-section" class="bg-[var(--color-primary)] py-24 px-6">
+        <div class="max-w-6xl mx-auto" id="content-block-16">
+            <div id="values-header" class="text-center mb-16">
+                <span class="text-[var(--color-secondary)] text-sm font-semibold uppercase tracking-widest mb-4 block">Why Falconry in Ireland</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-5" style="font-family: var(--font-display);">
+                    More Than an Experience
+                </h2>
+                <p class="text-white opacity-75 text-lg max-w-2xl mx-auto">
+                    Every visit is guided by our deep respect for the birds, the land, and the ancient heritage we are honoured to keep alive.
+                </p>
+            </div>
+
+            <div id="values-grid" class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+
+                <div id="value-welfare" class="text-center">
+                    <div class="w-16 h-16 rounded-full bg-[var(--color-secondary)] bg-opacity-20 flex items-center justify-center mx-auto mb-5" id="content-block-17">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[var(--color-white)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2" style="font-family: var(--font-display);">Bird Welfare First</h3>
+                    <p class="text-white opacity-65 text-sm leading-relaxed">Our raptors live in naturalistic conditions with expert daily care, never used for display alone.</p>
+                </div>
+
+                <div id="value-expertise" class="text-center">
+                    <div class="w-16 h-16 rounded-full bg-[var(--color-secondary)] bg-opacity-20 flex items-center justify-center mx-auto mb-5" id="content-block-18">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[var(--color-white)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2" style="font-family: var(--font-display);">Expert Falconers</h3>
+                    <p class="text-white opacity-65 text-sm leading-relaxed">Our team holds decades of combined experience and a profound passion for traditional Irish falconry.</p>
+                </div>
+
+                <div id="value-authentic" class="text-center">
+                    <div class="w-16 h-16 rounded-full bg-[var(--color-secondary)] bg-opacity-20 flex items-center justify-center mx-auto mb-5" id="content-block-19">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[var(--color-white)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M20.57 14.86L22 13.43 20.57 12 17 15.57 8.43 7 12 3.43 10.57 2 9.14 3.43 7.71 2 5.57 4.14 4.14 2.71 2.71 4.14l1.43 1.43L2 7.71l1.43 1.43L2 10.57 3.43 12 7 8.43 15.57 17 12 20.57 13.43 22l1.43-1.43L16.29 22l2.14-2.14 1.43 1.43 1.43-1.43-1.43-1.43L22 16.29l-1.43-1.43z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2" style="font-family: var(--font-display);">Authentically Irish</h3>
+                    <p class="text-white opacity-65 text-sm leading-relaxed">Rooted in the landscape, language, and living traditions of rural Ireland — genuine through and through.</p>
+                </div>
+
+                <div id="value-small-groups" class="text-center">
+                    <div class="w-16 h-16 rounded-full bg-[var(--color-secondary)] bg-opacity-20 flex items-center justify-center mx-auto mb-5" id="content-block-20">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[var(--color-white)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-2" style="font-family: var(--font-display);">Intimate Groups</h3>
+                    <p class="text-white opacity-65 text-sm leading-relaxed">We keep groups small so every guest receives personal attention and a truly memorable encounter.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="testimonials-section" class="py-24 px-6 bg-[var(--color-bg-alt)]">
+        <div class="max-w-6xl mx-auto" id="content-block-21">
+            <div id="testimonials-header" class="text-center mb-16">
+                <span class="text-[var(--color-secondary)] text-sm font-semibold uppercase tracking-widest mb-4 block">What Visitors Say</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-[var(--color-primary)] mb-5" style="font-family: var(--font-display);">
+                    Experiences That Stay With You
+                </h2>
+            </div>
+
+            <div id="testimonials-grid" class="grid md:grid-cols-3 gap-8">
+
+                <article id="testimonial-1" class="bg-white rounded-2xl p-8 shadow-md relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--color-secondary)] opacity-30 absolute top-6 right-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg>
+                    <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars" id="5-out">
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </div>
+                    <p class="text-[var(--color-text-light)] italic leading-relaxed mb-6 text-base">
+                        "Flying the hawk to my hand was the most magical moment of our entire Ireland trip. The falconers were knowledgeable, warm, and clearly devoted to their birds. Absolutely unforgettable."
+                    </p>
+                    <div class="flex items-center gap-3" id="content-block-22">
+                        <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm shrink-0" id="shrink-0">S</div>
+                        <div id="content-block-23">
+                            <p class="font-semibold text-[var(--color-text)] text-sm">Sarah M.</p>
+                            <p class="text-[var(--color-text-muted)] text-xs">Visitor from Edinburgh, UK</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="testimonial-2" class="bg-white rounded-2xl p-8 shadow-md relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--color-secondary)] opacity-30 absolute top-6 right-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg>
+                    <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars" id="5-out-2">
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </div>
+                    <p class="text-[var(--color-text-light)] italic leading-relaxed mb-6 text-base">
+                        "We booked a private session for our team away day. It was genuinely the best team-building experience we've ever done — exciting, educational, and deeply rooted in Irish culture. Highly recommend."
+                    </p>
+                    <div class="flex items-center gap-3" id="content-block-24">
+                        <div class="w-10 h-10 rounded-full bg-[var(--color-secondary)] flex items-center justify-center text-[var(--color-text-on-secondary)] font-bold text-sm shrink-0" id="shrink-0-2">D</div>
+                        <div id="content-block-25">
+                            <p class="font-semibold text-[var(--color-text)] text-sm">Declan O'B.</p>
+                            <p class="text-[var(--color-text-muted)] text-xs">Corporate Group, Dublin</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="testimonial-3" class="bg-white rounded-2xl p-8 shadow-md relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--color-secondary)] opacity-30 absolute top-6 right-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"></path>
+                    </svg>
+                    <div class="flex gap-1 mb-4" aria-label="5 out of 5 stars" id="5-out-3">
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                        <svg class="w-5 h-5 text-[var(--color-secondary)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                    </div>
+                    <p class="text-[var(--color-text-light)] italic leading-relaxed mb-6 text-base">
+                        "We came as a family with kids aged 8 and 12 — both were completely spellbound. The Heritage Walk was especially beautiful, walking through the bog with a peregrine flying overhead. Pure magic."
+                    </p>
+                    <div class="flex items-center gap-3" id="content-block-26">
+                        <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm shrink-0" id="shrink-0-3">A</div>
+                        <div id="content-block-27">
+                            <p class="font-semibold text-[var(--color-text)] text-sm">Aoife &amp; Family</p>
+                            <p class="text-[var(--color-text-muted)] text-xs">Family Visit, Cork</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="cta-band" class="relative py-24 px-6 overflow-hidden">
+        <img src="img/8d70bb9a-index-cta-background-glove.webp" s="" weathered="" brown="" leather="" glove="" held="" aloft="" against="" a="" soft="" bokeh="" background="" of="" misty="" irish="" green="" hills,="" warm="" amber="" afternoon="" light,="" hands-on="" texture="" detail,="" artisan="" craftsmanship="" feel,="" atmospheric="" depth"="" alt="A falconer's leather glove held up against the Irish countryside" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+        <div class="absolute inset-0 bg-[var(--color-secondary-dark)] opacity-85" id="content-block-28"></div>
+
+        <div id="cta-content" class="relative z-10 max-w-4xl mx-auto text-center">
+            <span class="text-white opacity-80 text-sm font-semibold uppercase tracking-widest mb-4 block">Book Your Visit</span>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight" style="font-family: var(--font-display);">
+                Ready to Take the Glove?
+            </h2>
+            <p class="text-white opacity-85 text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Whether you're visiting Ireland or a proud local, an encounter with our raptors will leave you with memories that last a lifetime. Sessions are available year-round.
+            </p>
+            <div id="cta-buttons" class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/falconry-experiences" data-page-link="falconry-experiences" class="inline-flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-[var(--color-primary)] font-bold text-lg px-10 py-4 rounded-full transition-all duration-200 shadow-xl hover:shadow-2xl">
+                    View All Experiences
+                </a>
+                <a href="/contact" data-page-link="contact" class="inline-flex items-center justify-center gap-3 bg-transparent border-2 border-white hover:bg-white hover:text-[var(--color-primary)] text-white font-semibold text-lg px-10 py-4 rounded-full transition-all duration-200">
+                    Get in Touch
+                </a>
+            </div>
+            <div id="cta-contact-info" class="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="tel:+353874126738" class="flex items-center gap-2 text-white opacity-80 hover:opacity-100 transition-opacity text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path></svg>
+                    +353 87 412 6738
+                </a>
+                <span class="hidden sm:block text-white opacity-40">|</span>
+                <a href="mailto:info@falconryinireland.com" class="flex items-center gap-2 text-white opacity-80 hover:opacity-100 transition-opacity text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path></svg>
+                    info@falconryinireland.com
+                </a>
+                <span class="hidden sm:block text-white opacity-40">|</span>
+                <span class="flex items-center gap-2 text-white opacity-80 text-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+                    Shannonbridge, Co. Offaly
+                </span>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer data-no-drag="true" class="bg-[var(--color-primary)] text-white" id="footer-block">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="content-block">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10" id="content-block-2">
+
+      
+      <div class="lg:col-span-1" id="content-block-3">
+        <div class="mb-4" id="content-block-4">
+          <span class="font-['Playfair_Display',serif] text-2xl font-bold tracking-wide text-white">
+            Falconry<br><span class="text-[var(--color-secondary)]">in Ireland</span>
+          </span>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed mb-5">
+          Celebrating the ancient and living art of falconry — a UNESCO Intangible Cultural Heritage — in the heart of Ireland's wild landscapes.
+        </p>
+        
+        <div class="flex gap-4 mt-2" id="content-block-5">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88V14.89H7.9v-2.89h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 17 22 12z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308C15.584 21.988 15.204 22 12 22s-3.584-.012-4.85-.07c-1.366-.062-2.633-.333-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.141 0-3.503.012-4.733.069-1.013.046-1.562.214-1.927.356-.484.188-.83.413-1.193.776-.363.363-.588.709-.776 1.193-.142.365-.31.914-.356 1.927-.057 1.23-.069 1.592-.069 4.733s.012 3.503.069 4.733c.046 1.013.214 1.562.356 1.927.188.484.413.83.776 1.193.363.363.709.588 1.193.776.365.142.914.31 1.927.356 1.23.057 1.592.069 4.733.069s3.503-.012 4.733-.069c1.013-.046 1.562-.214 1.927-.356.484-.188.83-.413 1.193-.776.363-.363.588-.709.776-1.193.142-.365.31-.914.356-1.927.057-1.23.069-1.592.069-4.733s-.012-3.503-.069-4.733c-.046-1.013-.214-1.562-.356-1.927a3.235 3.235 0 00-.776-1.193 3.235 3.235 0 00-1.193-.776c-.365-.142-.914-.31-1.927-.356-1.23-.057-1.592-.069-4.733-.069zm0 3.063a5.974 5.974 0 110 11.948A5.974 5.974 0 0112 7.028zm0 1.802a4.172 4.172 0 100 8.344 4.172 4.172 0 000-8.344zm6.406-3.187a1.44 1.44 0 110 2.88 1.44 1.44 0 010-2.88z"></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch us on YouTube" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      
+      <div id="experiences">
+        <h3 class="font-['Playfair_Display',serif] text-[var(--color-secondary)] text-base font-semibold uppercase tracking-widest mb-4">
+          Experiences
+        </h3>
+        <ul class="space-y-2 text-sm" id="list-block">
+          <li>
+            </li></ul></div></div></div></footer>
+  <script src="js/global.js"></script>
+  <script src="js/components.js"></script>
+</body></html>

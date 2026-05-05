@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Falconry in Ireland | Stories, Guides &amp; Heritage</title>
+  <meta name="description" content="Explore our blog for expert guides on falconry experiences in Ireland, Irish castle falconry, travel tips, and the living heritage of this ancient art.">
+  <link rel="stylesheet" href="../css/tailwind.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap"></noscript>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+  <link rel="preload" as="style" href="../css/global.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="../css/global.css"></noscript>
+  <link rel="preload" as="image" href="ai-image://blog-hero-falcon-mist" fetchpriority="high">
+</head>
+<body class="bg-[var(--color-bg)] text-[var(--color-text)]">
+
+<header x-data="{}" data-no-drag="true" class="fixed top-0 left-0 right-0 z-50 w-full" style="background-color: var(--color-primary, #2C4A1E); border-bottom: 2px solid var(--color-secondary, #C8922A);" id="header-block">
+  
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded focus:text-sm">
+    Skip to content
+  </a>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="content-block">
+    <div class="flex items-center justify-between h-16 lg:h-20" id="content-block-2">
+
+      
+      <a href="/" data-page-link="index" class="flex items-center gap-3 group flex-shrink-0" aria-label="Falconry in Ireland — Home">
+        
+        <div class="w-9 h-9 flex-shrink-0" style="color: var(--color-secondary, #C8922A);" id="content-block-3">
+          <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M28 4c-1.2 0-2.3.4-3.1 1.1L10 16.5l2.5 1.5 5-3.5-2 6 3-1-1.5 5 2.5-1.5L18 30l3.5-2-1 5 3-3 1 4 2-5 2 3V8.5C28.5 6 28.3 4 28 4z"></path>
+            <path d="M8 22c0 5.5 4 10.5 9 12-3-3-4.5-7-4-11L8 22z" opacity=".7"></path>
+          </svg>
+        </div>
+        
+        <div class="flex flex-col leading-tight" id="content-block-4">
+          <span class="font-bold text-base lg:text-lg tracking-wide" style="color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
+            Falconry
+          </span>
+          <span class="text-xs font-medium tracking-widest uppercase" style="color: var(--color-secondary, #C8922A); font-family: 'Playfair Display', Georgia, serif;">
+            in Ireland
+          </span>
+        </div>
+      </a>
+
+      
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation" id="main-navigation">
+
+        
+        <div class="relative" x-data="{open: false}" @mouseenter="open = true" @mouseleave="open = false" id="content-block-5">
+          <div class="flex items-center" id="content-block-6">
+            <a href="/falconry-experiences" data-page-link="falconry-experiences" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+              Experiences
+            </a>
+            <svg class="w-4 h-4 ml-0.5 transition-transform duration-200 cursor-pointer flex-shrink-0" :class="{'rotate-180': open}" @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+
+          
+          <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1" class="absolute top-full left-0 mt-1 rounded-md shadow-xl py-2 min-w-[220px] z-50" style="display:none; background-color: #1e3314; border: 1px solid var(--color-secondary, #C8922A); border-top: 2px solid var(--color-secondary, #C8922A);" id="content-block-7">
+            <a href="/beginner-sessions" data-page-link="beginner-sessions" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Beginner Sessions
+            </a>
+            <a href="/heritage-walks" data-page-link="heritage-walks" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Heritage Walks
+            </a>
+            <a href="/private-group-bookings" data-page-link="private-group-bookings" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Private &amp; Group Bookings
+            </a>
+          </div>
+        </div>
+
+        
+        <a href="/falconry-heritage" data-page-link="falconry-heritage" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Heritage
+        </a>
+
+        
+        <a href="/our-raptors" data-page-link="our-raptors" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Our Raptors
+        </a>
+
+        
+        <a href="/about-us" data-page-link="about-us" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          About Us
+        </a>
+
+        
+        <a href="/blog" data-page-link="blog-listing" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Blog
+        </a>
+
+        
+        </nav></div></div></header>
+
+<main id="main-content">
+
+  
+  <section class="relative overflow-hidden bg-[var(--color-primary-dark)] pt-28 pb-20">
+
+    
+    <img fetchpriority="high" src="ai-image://blog-hero-falcon-mist" data-ai-prompt="A peregrine falcon perched on an ancient mossy Irish castle battlement at misty dawn, atmospheric fog rolling over green valley below, dramatic wide-angle photography, deep forest green and warm amber tones, cinematic depth of field, heritage and nature mood" alt="A falcon perched on an Irish castle battlement at dawn" class="absolute inset-0 w-full h-full object-cover object-center opacity-30" decoding="async">
+
+    
+    <div class="absolute inset-0 bg-gradient-to-b from-[var(--color-primary-dark)] via-transparent to-[var(--color-primary-dark)] opacity-80"></div>
+
+    
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[var(--color-secondary)] opacity-5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+
+      
+      <div class="inline-flex items-center gap-2 bg-[var(--color-secondary)] bg-opacity-15 border border-[var(--color-secondary)] border-opacity-40 text-[var(--color-secondary-light)] text-xs font-semibold uppercase tracking-widest px-5 py-2 rounded-full mb-7">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"></path>
+        </svg>
+        The Falconry in Ireland Blog
+      </div>
+
+      
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" style="font-family: 'Playfair Display', Georgia, serif; letter-spacing: -0.025em;">
+        Stories from the <em class="not-italic text-[var(--color-secondary-light)]">Field &amp; Sky</em>
+      </h1>
+
+      
+      <p class="text-lg sm:text-xl text-white opacity-80 max-w-2xl mx-auto leading-relaxed mb-10">
+        Expert guides, heritage insights, travel inspiration, and behind-the-scenes stories from Ireland's ancient falconry tradition. Written by our falconers, for those who look up.
+      </p>
+
+      
+      <div class="flex flex-wrap justify-center gap-8 sm:gap-14">
+        <div class="text-center">
+          <p class="text-3xl font-bold text-[var(--color-secondary)]" style="font-family: 'Playfair Display', serif;">3</p>
+          <p class="text-xs text-white opacity-60 uppercase tracking-widest mt-1">Categories</p>
+        </div>
+        <div class="w-px bg-white opacity-15 hidden sm:block"></div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-[var(--color-secondary)]" style="font-family: 'Playfair Display', serif;">2026</p>
+          <p class="text-xs text-white opacity-60 uppercase tracking-widest mt-1">Season Stories</p>
+        </div>
+        <div class="w-px bg-white opacity-15 hidden sm:block"></div>
+        <div class="text-center">
+          <p class="text-3xl font-bold text-[var(--color-secondary)]" style="font-family: 'Playfair Display', serif;">100%</p>
+          <p class="text-xs text-white opacity-60 uppercase tracking-widest mt-1">Authentic Irish</p>
+        </div>
+      </div>
+
+    </div>
+
+    
+    <div class="absolute bottom-0 left-0 right-0 h-16 overflow-hidden">
+      <svg viewBox="0 0 1440 64" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" class="w-full h-full" aria-hidden="true">
+        <path d="M0 64L480 20L960 48L1440 0V64H0Z" fill="var(--color-bg)"></path>
+      </svg>
+    </div>
+
+  </section>
+
+
+  
+  <section class="bg-[var(--color-bg)] border-b border-[var(--color-border)] sticky top-[64px] lg:top-[80px] z-40">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <nav aria-label="Blog category filters" class="flex items-center gap-2 sm:gap-3 overflow-x-auto py-4 scrollbar-hide">
+
+        
+        <a href="/blog" class="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 border-2 border-[var(--color-primary)] bg-[var(--color-primary)] text-white" aria-current="page">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+          </svg>
+          All Articles
+        </a>
+
+        
+        <a href="/blog/falconry-experiences-ireland" class="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border-2 border-[var(--color-border)] text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] hover:bg-[var(--color-gray-100)]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-[var(--color-secondary)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23 7l-9-4-9 4v7c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7z"></path>
+          </svg>
+          Falconry Experiences Ireland
+        </a>
+
+        
+        <a href="/blog/irish-castles-falconry" class="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border-2 border-[var(--color-border)] text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] hover:bg-[var(--color-gray-100)]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-[var(--color-secondary)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3 13h2v8H3v-8zm4-4h2v12H7V9zm4-4h2v16h-2V5zm4 8h2v8h-2v-8zm4-6h2v14h-2V7z"></path>
+          </svg>
+          Irish Castles &amp; Falconry
+        </a>
+
+        
+        <a href="/blog/ireland-travel-guide" class="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border-2 border-[var(--color-border)] text-[var(--color-text)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] hover:bg-[var(--color-gray-100)]">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5 text-[var(--color-secondary)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+          </svg>
+          Ireland Travel Guide
+        </a>
+
+        
+        <span class="hidden sm:block w-px h-6 bg-[var(--color-border)] mx-1 shrink-0" aria-hidden="true"></span>
+
+        
+        <a href="#newsletter" class="inline-flex items-center gap-2 shrink-0 px-4 py-2 rounded-full text-sm font-medium text-[var(--color-secondary-dark)] hover:text-[var(--color-secondary)] transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M6.18 15.64a2.18 2.18 0 010 4.36 2.18 2.18 0 010-4.36M4 4.44A15.56 15.56 0 0119.56 20h-2.83A12.73 12.73 0 004 7.27V4.44m0 5.66a9.9 9.9 0 019.9 9.9h-2.83A7.07 7.07 0 004 12.93V10.1z"></path>
+          </svg>
+          Subscribe
+        </a>
+
+      </nav>
+
+    </div>
+  </section>
+
+
+  
+  <section class="bg-[var(--color-bg)] py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+
+      
+      <div class="flex items-center justify-between mb-10 gap-4 flex-wrap">
+        <div>
+          <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest block mb-1">Latest Writing</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-[var(--color-primary-dark)]" style="font-family: 'Playfair Display', Georgia, serif;">
+            All Articles
+          </h2>
+        </div>
+
+        
+        <div class="hidden sm:flex items-center gap-3 text-[var(--color-secondary)] opacity-50" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 40 40" fill="currentColor">
+            <path d="M28 4c-1.2 0-2.3.4-3.1 1.1L10 16.5l2.5 1.5 5-3.5-2 6 3-1-1.5 5 2.5-1.5L18 30l3.5-2-1 5 3-3 1 4 2-5 2 3V8.5C28.5 6 28.3 4 28 4z"></path>
+            <path d="M8 22c0 5.5 4 10.5 9 12-3-3-4.5-7-4-11L8 22z" opacity=".7"></path>
+          </svg>
+        </div>
+      </div>
+
+      
+      <p class="text-center text-gray-400 py-8">Aucun article publie</p>
+
+    </div>
+  </section>
+
+
+  
+  <div class="bg-[var(--color-accent-light)] border-y border-[var(--color-accent-dark)]">
+    <div class="max-w-6xl mx-auto px-6 py-7">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-10 text-center sm:text-left">
+
+        <div class="flex items-center gap-3 shrink-0">
+          <div class="w-10 h-10 rounded-full bg-[var(--color-secondary)] bg-opacity-20 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-[var(--color-secondary-dark)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+          </div>
+          <p class="text-sm font-semibold text-[var(--color-primary-dark)] uppercase tracking-widest">UNESCO Recognised Heritage</p>
+        </div>
+
+        <div class="hidden sm:block w-px h-8 bg-[var(--color-accent-dark)] opacity-40"></div>
+
+        <p class="text-sm text-[var(--color-primary-dark)] opacity-80 max-w-xl leading-relaxed">
+          Falconry has been practised in Ireland for over 4,000 years. Our blog is dedicated to sharing that living story — honestly and in depth.
+        </p>
+
+        <div class="hidden sm:block w-px h-8 bg-[var(--color-accent-dark)] opacity-40"></div>
+
+        <a href="/falconry-heritage" class="shrink-0 inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-primary)] hover:text-[var(--color-secondary-dark)] transition-colors duration-200 border-b-2 border-[var(--color-secondary)] pb-0.5">
+          Discover Our Heritage
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  <section class="bg-[var(--color-bg-alt)] py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+        <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest block mb-2">Browse by Topic</span>
+        <h2 class="text-2xl sm:text-3xl font-bold text-[var(--color-primary-dark)]" style="font-family: 'Playfair Display', Georgia, serif;">
+          Explore Our Categories
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+
+        
+        <a href="/blog/falconry-experiences-ireland" class="group relative overflow-hidden rounded-2xl bg-white border border-[var(--color-border)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300 flex flex-col" aria-label="Browse Falconry Experiences Ireland articles">
+          <div class="relative h-44 overflow-hidden">
+            <img src="ai-image://category-experiences-hawk" data-ai-prompt="A beginner visitor wearing a thick leather glove with a magnificent Harris hawk perched on it, outdoors in lush Irish countryside at golden hour, warm natural light, joyful encounter, medium shot photography, rich green background with amber bokeh" alt="Falconry experience in Irish countryside" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)] via-transparent to-transparent opacity-60"></div>
+            <span class="absolute top-4 left-4 bg-[var(--color-secondary)] text-[var(--color-text-on-secondary)] text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+              Experiences
+            </span>
+          </div>
+
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-lg font-bold text-[var(--color-primary-dark)] mb-2 group-hover:text-[var(--color-primary)] transition-colors" style="font-family: 'Playfair Display', Georgia, serif;">
+              Falconry Experiences Ireland
+            </h3>
+            <p class="text-sm text-[var(--color-text-light)] leading-relaxed flex-1">
+              From beginner sessions to advanced raptor encounters — guides to every falconry experience available across Ireland in 2026.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-[var(--color-primary)] font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+              Browse Articles
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        
+        <a href="/blog/irish-castles-falconry" class="group relative overflow-hidden rounded-2xl bg-white border border-[var(--color-border)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300 flex flex-col" aria-label="Browse Irish Castles &amp; Falconry articles">
+          <div class="relative h-44 overflow-hidden">
+            <img src="ai-image://category-castle-falconry" data-ai-prompt="A dramatic medieval Irish stone castle tower at dusk with a peregrine falcon silhouetted against a glowing amber sky, atmospheric misty landscape, heritage and ancient history mood, wide-angle cinematic photograph, deep green and gold tones" alt="A falcon perched near an Irish castle" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)] via-transparent to-transparent opacity-60"></div>
+            <span class="absolute top-4 left-4 bg-[var(--color-primary)] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+              Castles
+            </span>
+          </div>
+
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-lg font-bold text-[var(--color-primary-dark)] mb-2 group-hover:text-[var(--color-primary)] transition-colors" style="font-family: 'Playfair Display', Georgia, serif;">
+              Irish Castles &amp; Falconry
+            </h3>
+            <p class="text-sm text-[var(--color-text-light)] leading-relaxed flex-1">
+              The ancient bond between falconry and Ireland's great castles — history, locations, and where to experience this living tradition today.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-[var(--color-primary)] font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+              Browse Articles
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+        
+        <a href="/blog/ireland-travel-guide" class="group relative overflow-hidden rounded-2xl bg-white border border-[var(--color-border)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300 flex flex-col" aria-label="Browse Ireland Travel Guide articles">
+          <div class="relative h-44 overflow-hidden">
+            <img src="ai-image://category-travel-ireland" data-ai-prompt="An aerial panoramic view of the Irish midlands countryside at golden hour, patchwork green fields divided by old stone walls and hedgerows, a winding river catching the sunset light, soft atmospheric haze, beautiful landscape photography, travel and adventure mood" alt="Panoramic view of the Irish countryside" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-primary-dark)] via-transparent to-transparent opacity-60"></div>
+            <span class="absolute top-4 left-4 bg-[var(--color-secondary-dark)] text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">
+              Travel
+            </span>
+          </div>
+
+          <div class="p-6 flex flex-col flex-1">
+            <h3 class="text-lg font-bold text-[var(--color-primary-dark)] mb-2 group-hover:text-[var(--color-primary)] transition-colors" style="font-family: 'Playfair Display', Georgia, serif;">
+              Ireland Travel Guide
+            </h3>
+            <p class="text-sm text-[var(--color-text-light)] leading-relaxed flex-1">
+              Planning a visit? Our travel guides cover everything from getting to Shannonbridge to the best times of year for raptor encounters across Ireland.
+            </p>
+            <div class="mt-4 flex items-center gap-2 text-[var(--color-primary)] font-semibold text-sm group-hover:gap-3 transition-all duration-200">
+              Browse Articles
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+              </svg>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+  <section id="newsletter" class="relative overflow-hidden bg-[var(--color-primary)] py-20">
+
+    
+    <img src="ai-image://newsletter-bg-hawk-feather" data-ai-prompt="Close-up abstract macro photograph of a hawk feather with detailed barbs visible, rich amber and deep forest green tones, soft bokeh background, elegant and natural, fine art photography style" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover opacity-10" loading="lazy" decoding="async">
+
+    
+    <div class="absolute top-0 right-0 w-96 h-96 bg-[var(--color-secondary)] opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[var(--color-secondary)] opacity-8 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+
+      
+      <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[var(--color-secondary)] bg-opacity-20 border border-[var(--color-secondary)] border-opacity-30 mb-7">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-[var(--color-secondary)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+        </svg>
+      </div>
+
+      
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight" style="font-family: 'Playfair Display', Georgia, serif;">
+        Never Miss a Story from the Sky
+      </h2>
+      <p class="text-white opacity-75 text-base sm:text-lg leading-relaxed mb-3">
+        Join our growing community of falconry enthusiasts and Ireland lovers. Get new articles, seasonal guides, and exclusive behind-the-scenes stories delivered to your inbox.
+      </p>
+      <p class="text-[var(--color-secondary-light)] text-sm font-medium mb-8">
+        No spam. Unsubscribe anytime. Published monthly from Shannonbridge.
+      </p>
+
+      
+      <form action="#" method="post" class="flex flex-col sm:flex-row gap-3 max-w-xl mx-auto" aria-label="Newsletter sign up form">
+        <label for="newsletter-email" class="sr-only">Your email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="Your email address" required="" autocomplete="email" class="flex-1 px-5 py-3.5 rounded-xl bg-white bg-opacity-10 border border-white border-opacity-25 text-white placeholder-white placeholder-opacity-50 text-sm font-medium focus:outline-none focus:border-[var(--color-secondary)] focus:bg-opacity-15 transition-all duration-200">
+        <button type="submit" class="shrink-0 inline-flex items-center justify-center gap-2 bg-[var(--color-secondary```html
+)] hover:bg-[var(--color-secondary-dark)] text-[var(--color-text-on-secondary)] font-semibold text-sm px-7 py-3.5 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+          </svg>
+          Subscribe
+        </button>
+      </form>
+
+      
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-6">
+        <div class="flex items-center gap-2 text-white opacity-60 text-xs">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] opacity-80" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"></path>
+          </svg>
+          No spam, ever
+        </div>
+        <div class="w-px h-4 bg-white opacity-20 hidden sm:block"></div>
+        <div class="flex items-center gap-2 text-white opacity-60 text-xs">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] opacity-80" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"></path>
+          </svg>
+          Monthly editions
+        </div>
+        <div class="w-px h-4 bg-white opacity-20 hidden sm:block"></div>
+        <div class="flex items-center gap-2 text-white opacity-60 text-xs">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-[var(--color-secondary)] opacity-80" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path>
+          </svg>
+          Expert falconer insights
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  
+  <section class="bg-[var(--color-bg-alt)] py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="bg-white rounded-2xl border border-[var(--color-border)] shadow-[var(--shadow-md)] overflow-hidden">
+        <div class="grid sm:grid-cols-2 gap-0">
+
+          
+          <div class="relative h-56 sm:h-auto overflow-hidden">
+            <img src="ai-image://cta-blog-bottom-raptor" data-ai-prompt="A Harris hawk perched majestically on a falconer's weathered leather glove against a soft bokeh background of misty Irish green hills at golden hour, dramatic lighting, warm amber and forest green colour palette, professional wildlife photography, shallow depth of field" alt="A hawk perched on a falconer's glove in the Irish countryside" class="w-full h-full object-cover" loading="lazy" decoding="async">
+            <div class="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-20 sm:opacity-40"></div>
+          </div>
+
+          
+          <div class="p-8 sm:p-10 flex flex-col justify-center">
+            <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest block mb-3">Ready to Experience It?</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-[var(--color-primary-dark)] mb-4 leading-snug" style="font-family: 'Playfair Display', Georgia, serif;">
+              From Reading to Flying — Book Your Session
+            </h2>
+            <p class="text-[var(--color-text-light)] text-sm sm:text-base leading-relaxed mb-7">
+              Our articles are just the beginning. Come and feel the weight of a hawk on your glove, walk the ancient Irish boglands, and be part of a 4,000-year-old tradition. Sessions run year-round from Shannonbridge, Co. Offaly.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <a href="/falconry-experiences" data-page-link="falconry-experiences" class="inline-flex items-center justify-center gap-2 bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] text-white font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"></path>
+                </svg>
+                View Experiences
+              </a>
+              <a href="/contact" data-page-link="contact" class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"></path>
+                </svg>
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer data-no-drag="true" class="bg-[var(--color-primary)] text-white" id="footer-block">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="content-block">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10" id="content-block-2">
+
+      
+      <div class="lg:col-span-1" id="content-block-3">
+        <div class="mb-4" id="content-block-4">
+          <span class="font-['Playfair_Display',serif] text-2xl font-bold tracking-wide text-white">
+            Falconry<br><span class="text-[var(--color-secondary)]">in Ireland</span>
+          </span>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed mb-5">
+          Celebrating the ancient and living art of falconry — a UNESCO Intangible Cultural Heritage — in the heart of Ireland's wild landscapes.
+        </p>
+        
+        <div class="flex gap-4 mt-2" id="content-block-5">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88V14.89H7.9v-2.89h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 17 22 12z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308C15.584 21.988 15.204 22 12 22s-3.584-.012-4.85-.07c-1.366-.062-2.633-.333-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.141 0-3.503.012-4.733.069-1.013.046-1.562.214-1.927.356-.484.188-.83.413-1.193.776-.363.363-.588.709-.776 1.193-.142.365-.31.914-.356 1.927-.057 1.23-.069 1.592-.069 4.733s.012 3.503.069 4.733c.046 1.013.214 1.562.356 1.927.188.484.413.83.776 1.193.363.363.709.588 1.193.776.365.142.914.31 1.927.356 1.23.057 1.592.069 4.733.069s3.503-.012 4.733-.069c1.013-.046 1.562-.214 1.927-.356.484-.188.83-.413 1.193-.776.363-.363.588-.709.776-1.193.142-.365.31-.914.356-1.927.057-1.23.069-1.592.069-4.733s-.012-3.503-.069-4.733c-.046-1.013-.214-1.562-.356-1.927a3.235 3.235 0 00-.776-1.193 3.235 3.235 0 00-1.193-.776c-.365-.142-.914-.31-1.927-.356-1.23-.057-1.592-.069-4.733-.069zm0 3.063a5.974 5.974 0 110 11.948A5.974 5.974 0 0112 7.028zm0 1.802a4.172 4.172 0 100 8.344 4.172 4.172 0 000-8.344zm6.406-3.187a1.44 1.44 0 110 2.88 1.44 1.44 0 010-2.88z"></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch us on YouTube" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      
+      <div id="experiences">
+        <h3 class="font-['Playfair_Display',serif] text-[var(--color-secondary)] text-base font-semibold uppercase tracking-widest mb-4">
+          Experiences
+        </h3>
+        <ul class="space-y-2 text-sm" id="list-block">
+          <li>
+            </li></ul></div></div></div></footer>
+
+  <script src="../js/global.js"></script>
+  <script src="../js/components.js"></script>
+</body></html>

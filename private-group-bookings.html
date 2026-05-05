@@ -1,0 +1,724 @@
+<!DOCTYPE html><html lang="en"><head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private &amp; Group Bookings — Falconry in Ireland</title>
+    <meta name="description" content="Tailored falconry experiences for families, corporate groups, team-building events, and special occasions in the heart of Ireland's ancient landscape.">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"></noscript>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+  <link rel="preload" as="style" href="css/global.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/global.css"></noscript>
+  <link rel="preload" as="image" href="img/975d6714-private-group-bookings-hero-private-group.webp" fetchpriority="high">
+</head>
+<body class="bg-[var(--color-bg)] text-[var(--color-text)] font-['Inter',sans-serif]">
+<header x-data="{}" data-no-drag="true" class="fixed top-0 left-0 right-0 z-50 w-full" style="background-color: var(--color-primary, #2C4A1E); border-bottom: 2px solid var(--color-secondary, #C8922A);" id="header-block">
+  
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded focus:text-sm">
+    Skip to content
+  </a>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="content-block">
+    <div class="flex items-center justify-between h-16 lg:h-20" id="content-block-2">
+
+      
+      <a href="/" data-page-link="index" class="flex items-center gap-3 group flex-shrink-0" aria-label="Falconry in Ireland — Home">
+        
+        <div class="w-9 h-9 flex-shrink-0" style="color: var(--color-secondary, #C8922A);" id="content-block-3">
+          <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M28 4c-1.2 0-2.3.4-3.1 1.1L10 16.5l2.5 1.5 5-3.5-2 6 3-1-1.5 5 2.5-1.5L18 30l3.5-2-1 5 3-3 1 4 2-5 2 3V8.5C28.5 6 28.3 4 28 4z"></path>
+            <path d="M8 22c0 5.5 4 10.5 9 12-3-3-4.5-7-4-11L8 22z" opacity=".7"></path>
+          </svg>
+        </div>
+        
+        <div class="flex flex-col leading-tight" id="content-block-4">
+          <span class="font-bold text-base lg:text-lg tracking-wide" style="color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
+            Falconry
+          </span>
+          <span class="text-xs font-medium tracking-widest uppercase" style="color: var(--color-secondary, #C8922A); font-family: 'Playfair Display', Georgia, serif;">
+            in Ireland
+          </span>
+        </div>
+      </a>
+
+      
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation" id="main-navigation">
+
+        
+        <div class="relative" x-data="{open: false}" @mouseenter="open = true" @mouseleave="open = false" id="content-block-5">
+          <div class="flex items-center" id="content-block-6">
+            <a href="/falconry-experiences" data-page-link="falconry-experiences" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+              Experiences
+            </a>
+            <svg class="w-4 h-4 ml-0.5 transition-transform duration-200 cursor-pointer flex-shrink-0" :class="{'rotate-180': open}" @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+
+          
+          <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1" class="absolute top-full left-0 mt-1 rounded-md shadow-xl py-2 min-w-[220px] z-50" style="display:none; background-color: #1e3314; border: 1px solid var(--color-secondary, #C8922A); border-top: 2px solid var(--color-secondary, #C8922A);" id="content-block-7">
+            <a href="/beginner-sessions" data-page-link="beginner-sessions" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Beginner Sessions
+            </a>
+            <a href="/heritage-walks" data-page-link="heritage-walks" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Heritage Walks
+            </a>
+            <a href="/private-group-bookings" data-page-link="private-group-bookings" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Private &amp; Group Bookings
+            </a>
+          </div>
+        </div>
+
+        
+        <a href="/falconry-heritage" data-page-link="falconry-heritage" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Heritage
+        </a>
+
+        
+        <a href="/our-raptors" data-page-link="our-raptors" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Our Raptors
+        </a>
+
+        
+        <a href="/about-us" data-page-link="about-us" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          About Us
+        </a>
+
+        
+        <a href="/blog" data-page-link="blog-listing" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Blog
+        </a>
+
+        
+        </nav></div></div></header>
+
+<main id="main-content">
+
+    
+    <section id="hero-section" class="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <img fetchpriority="high" src="img/975d6714-private-group-bookings-hero-private-group.webp" alt="Falconer with hawk on glove surrounded by a group in Irish countryside" class="absolute inset-0 w-full h-full object-cover object-center" decoding="async">
+        <div id="hero-overlay" class="absolute inset-0 bg-[var(--color-primary)] opacity-60"></div>
+        <div id="hero-content" class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <span class="inline-block text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-lg md:text-xl tracking-wide mb-4">Private &amp; Group Bookings</span>
+            <h1 class="font-['Playfair_Display',serif] text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
+                An Unforgettable Experience<br class="hidden md:block"> <span class="text-[var(--color-secondary)]">Shared Together</span>
+            </h1>
+            <p class="text-white text-lg md:text-xl font-light max-w-2xl mx-auto mb-8 leading-relaxed">
+                From intimate family outings to large corporate team-building days, we craft bespoke falconry experiences in the heart of Ireland's ancient landscape.
+            </p>
+            <div id="hero-cta" class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" data-page-link="contact" class="inline-block bg-[var(--color-secondary)] text-white font-semibold px-8 py-4 rounded-sm hover:bg-[var(--color-primary-dark)] transition-colors duration-300 tracking-wide uppercase text-sm">
+                    Enquire Now
+                </a>
+                <a href="/falconry-experiences" data-page-link="falconry-experiences" class="inline-block border-2 border-white text-white font-semibold px-8 py-4 rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-300 tracking-wide uppercase text-sm">
+                    All Experiences
+                </a>
+            </div>
+        </div>
+        
+        <div id="hero-scroll" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white opacity-70">
+            <span class="text-xs tracking-widest uppercase">Scroll</span>
+            <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </section>
+
+    
+    <section id="intro-section" class="py-20 px-6 bg-[var(--color-bg)]">
+        <div id="intro-wrapper" class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div id="intro-text">
+                <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Tailored For You</span>
+                <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 mb-6 leading-snug">
+                    Falconry Designed Around Your Group
+                </h2>
+                <p class="text-[var(--color-text)] leading-relaxed mb-4">
+                    No two groups are alike — and neither are our experiences. Whether you're planning a family adventure, celebrating a milestone, or looking for a truly distinctive corporate event, our expert falconers work with you to design a programme that fits your group's needs, size, and interests.
+                </p>
+                <p class="text-[var(--color-text)] leading-relaxed mb-6">
+                    Set against the breath-taking backdrop of Co. Offaly's Irish midlands, our private and group bookings offer an immersive connection with nature, history, and one of Ireland's most ancient crafts — recognised by UNESCO as part of humanity's intangible cultural heritage.
+                </p>
+                <a href="/falconry-heritage" data-page-link="falconry-heritage" class="inline-flex items-center gap-2 text-[var(--color-primary)] font-semibold hover:gap-4 transition-all duration-300 text-sm uppercase tracking-wide">
+                    Discover Our Heritage
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </a>
+            </div>
+            <div id="intro-image" class="relative">
+                <img src="img/e61d8874-private-group-bookings-intro-group-falconry.webp"s gloved hand, golden late afternoon light, soft green hills in the background, warm and welcoming atmosphere, lifestyle photography" alt="Family enjoying a falconry session with a hawk on a child's gloved hand in an Irish field" class="w-full h-80 md:h-96 object-cover rounded-sm shadow-xl" loading="lazy" decoding="async">
+                <div id="intro-badge" class="absolute -bottom-5 -left-5 bg-[var(--color-secondary)] text-white p-5 rounded-sm shadow-lg hidden md:block">
+                    <p class="font-['Playfair_Display',serif] text-2xl font-bold leading-none">15+</p>
+                    <p class="text-xs uppercase tracking-widest mt-1">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="booking-types" class="py-20 px-6 bg-[var(--color-bg-alt)]">
+        <div id="booking-header" class="max-w-5xl mx-auto text-center mb-14">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Who We Welcome</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 leading-snug">
+                Experiences for Every Occasion
+            </h2>
+        </div>
+        <div id="booking-cards" class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+            
+            <article id="card-families" class="bg-[var(--color-bg)] rounded-sm shadow-lg overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                <div id="card-families-image" class="overflow-hidden h-52">
+                    <img src="img/9c0e838b-private-group-bookings-card-family-booking.webp"s glove in an Irish meadow, children delighted and parents engaged, soft morning mist, warm nature photography, shallow depth of field" alt="Family watching a barn owl take flight during a falconry session" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                </div>
+                <div id="card-families-body" class="p-6">
+                    <div class="w-10 h-1 bg-[var(--color-secondary)] mb-4" id="content-block"></div>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-3">Family Groups</h3>
+                    <p class="text-[var(--color-text)] text-sm leading-relaxed mb-4">
+                        Create lasting memories with your loved ones. Our family sessions are safe, fun, and educational — perfect for children aged 8 and above and adults of all ages. Children are guided every step of the way by our certified falconers.
+                    </p>
+                    <ul id="families-features" class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Suitable for ages 8+
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Up to 12 participants
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Full safety briefing included
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            
+            <article id="card-corporate" class="bg-[var(--color-bg)] rounded-sm shadow-lg overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                <div id="card-corporate-image" class="overflow-hidden h-52">
+                    <img src="img/7b532ac3-private-group-bookings-card-corporate-booking.webp" alt="Corporate group participating in a falconry team-building event in Ireland" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                </div>
+                <div id="card-corporate-body" class="p-6">
+                    <div class="w-10 h-1 bg-[var(--color-secondary)] mb-4" id="content-block-2"></div>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-3">Corporate Groups</h3>
+                    <p class="text-[var(--color-text)] text-sm leading-relaxed mb-4">
+                        Step beyond the boardroom. Falconry offers a unique and powerful metaphor for leadership, patience, and trust — making it an extraordinary backdrop for team-building events, client entertainment, or corporate away days.
+                    </p>
+                    <ul id="corporate-features" class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Groups of 10–50+ people
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Fully customisable agenda
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Catering options available
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            
+            <article id="card-events" class="bg-[var(--color-bg)] rounded-sm shadow-lg overflow-hidden group hover:-translate-y-1 transition-transform duration-300">
+                <div id="card-events-image" class="overflow-hidden h-52">
+                    <img src="img/aaef48d0-private-group-bookings-card-events-booking.webp" alt="Couple posing with a hawk during a special celebration falconry event in Ireland" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                </div>
+                <div id="card-events-body" class="p-6">
+                    <div class="w-10 h-1 bg-[var(--color-secondary)] mb-4" id="content-block-3"></div>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-3">Special Occasions</h3>
+                    <p class="text-[var(--color-text)] text-sm leading-relaxed mb-4">
+                        Mark a birthday, hen party, anniversary, or wedding with something truly extraordinary. Our special occasion packages are designed to surprise and delight, creating stories you'll tell for years to come.
+                    </p>
+                    <ul id="events-features" class="space-y-2">
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Hen &amp; stag parties welcome
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Photography moments included
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-[var(--color-text)]">
+                            <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Bespoke gift certificates
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    
+    <section id="experience-details" class="py-20 px-6 bg-[var(--color-bg)]">
+        <div id="experience-header" class="max-w-5xl mx-auto text-center mb-14">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Your Day With Us</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 leading-snug">
+                What to Expect
+            </h2>
+            <p class="text-[var(--color-text)] max-w-2xl mx-auto mt-4 leading-relaxed">
+                Every private and group booking is handled with care from the first enquiry to the final farewell. Here is how a typical session unfolds.
+            </p>
+        </div>
+        <div id="timeline-wrapper" class="max-w-4xl mx-auto">
+            <ol id="timeline-list" class="relative border-l-2 border-[var(--color-secondary)] space-y-10 pl-8">
+
+                <li id="step-welcome" class="relative">
+                    <div class="absolute -left-[calc(0.5rem+1px)] top-1 w-4 h-4 rounded-full bg-[var(--color-secondary)] border-2 border-[var(--color-bg)]" id="content-block-4"></div>
+                    <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest">Step 01</span>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mt-1 mb-2">Welcome &amp; Briefing</h3>
+                    <p class="text-[var(--color-text)] leading-relaxed text-sm">
+                        Your group is welcomed to our grounds and introduced to our master falconers. A comprehensive safety briefing and short talk on the history of falconry in Ireland sets the scene for the adventure ahead.
+                    </p>
+                </li>
+
+                <li id="step-meet-raptors" class="relative">
+                    <div class="absolute -left-[calc(0.5rem+1px)] top-1 w-4 h-4 rounded-full bg-[var(--color-secondary)] border-2 border-[var(--color-bg)]" id="content-block-5"></div>
+                    <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest">Step 02</span>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mt-1 mb-2">Meet the Raptors</h3>
+                    <p class="text-[var(--color-text)] leading-relaxed text-sm">
+                        Get up close with our magnificent birds of prey — from the majestic Harris Hawk to the swift Peregrine Falcon. Learn about each bird's unique characteristics, training, and role in the ancient art of falconry.
+                    </p>
+                </li>
+
+                <li id="step-glove-flying" class="relative">
+                    <div class="absolute -left-[calc(0.5rem+1px)] top-1 w-4 h-4 rounded-full bg-[var(--color-secondary)] border-2 border-[var(--color-bg)]" id="content-block-6"></div>
+                    <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest">Step 03</span>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mt-1 mb-2">Hands-On Glove Flying</h3>
+                    <p class="text-[var(--color-text)] leading-relaxed text-sm">
+                        The centrepiece of the experience — each participant has the opportunity to fly a bird of prey to the glove under expert supervision. This is an intimate, personal moment that never fails to leave people speechless.
+                    </p>
+                </li>
+
+                <li id="step-walk-hunt" class="relative">
+                    <div class="absolute -left-[calc(0.5rem+1px)] top-1 w-4 h-4 rounded-full bg-[var(--color-secondary)] border-2 border-[var(--color-bg)]" id="content-block-7"></div>
+                    <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest">Step 04</span>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mt-1 mb-2">Guided Field Walk</h3>
+                    <p class="text-[var(--color-text)] leading-relaxed text-sm">
+                        Take a guided walk through the stunning Irish landscape, flying the hawks in a more natural, open setting. Watch free-flight demonstrations and feel the thrill of a bird returning to the fist at full speed.
+                    </p>
+                </li>
+
+                <li id="step-debrief" class="relative">
+                    <div class="absolute -left-[calc(0.5rem+1px)] top-1 w-4 h-4 rounded-full bg-[var(--color-secondary)] border-2 border-[var(--color-bg)]" id="content-block-8"></div>
+                    <span class="text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-widest">Step 05</span>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mt-1 mb-2">Farewell &amp; Photography</h3>
+                    <p class="text-[var(--color-text)] leading-relaxed text-sm">
+                        The session closes with a debrief, Q&amp;A, and dedicated photography time with the birds. You are welcome to browse our gift shop and take home a lasting memento of your extraordinary day.
+                    </p>
+                </li>
+
+            </ol>
+        </div>
+    </section>
+
+    
+    <section id="gallery-section" class="py-20 px-6 bg-[var(--color-primary)]">
+        <div id="gallery-header" class="max-w-5xl mx-auto text-center mb-12">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">A Glimpse Into the Experience</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-white mt-2 leading-snug">
+                Moments in the Field
+            </h2>
+        </div>
+        <div id="gallery-grid" class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div id="gallery-item-1" class="col-span-2 row-span-2 overflow-hidden rounded-sm">
+                <img src="img/479d8917-private-group-bookings-gallery-large-flight.webp" alt="Peregrine falcon in dramatic mid-flight over the Irish countryside" class="w-full h-64 md:h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </div>
+            <div id="gallery-item-2" class="overflow-hidden rounded-sm">
+                <img src="img/978b92b6-private-group-bookings-gallery-glove-closeup.webp" alt="Close-up of a Harris Hawk perched on a traditional leather falconry glove" class="w-full h-32 md:h-40 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </div>
+            <div id="gallery-item-3" class="overflow-hidden rounded-sm">
+                <img src="img/a8cb3004-private-group-bookings-gallery-group-smiling.webp" alt="Cheerful group of adults smiling after a falconry experience in Ireland" class="w-full h-32 md:h-40 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </div>
+            <div id="gallery-item-4" class="overflow-hidden rounded-sm">
+                <img src="img/0313636f-private-group-bookings-gallery-barn-owl.webp" alt="Barn owl perched on a wooden post in a misty Irish meadow at dusk" class="w-full h-32 md:h-40 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </div>
+            <div id="gallery-item-5" class="overflow-hidden rounded-sm">
+                <img src="https://zgmrpjtpvloizvlfewuq.supabase.co/storage/v1/object/public/project-images/b485c603-729e-42f6-8d40-af79aba70667/private-group-bookings-gallery-child-flying.png" alt="Child experiencing a hawk landing on their gloved hand during a falconry session" class="w-full h-32 md:h-40 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="pricing-section" class="py-20 px-6 bg-[var(--color-bg-alt)]">
+        <div id="pricing-header" class="max-w-5xl mx-auto text-center mb-14">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Transparent Pricing</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 leading-snug">
+                Session Packages
+            </h2>
+            <p class="text-[var(--color-text)] max-w-xl mx-auto mt-4 text-sm leading-relaxed">
+                All prices are per group and include equipment, expert falconers, and full guidance throughout. Custom packages are available — please get in touch to discuss your requirements.
+            </p>
+        </div>
+        <div id="pricing-cards" class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+
+            
+            <div id="price-half-day" class="bg-[var(--color-bg)] rounded-sm shadow-md p-8 border-t-4 border-[var(--color-secondary)] flex flex-col">
+                <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-2">Half-Day Session</h3>
+                <p class="text-[var(--color-text)] text-sm mb-6 leading-relaxed">Ideal for families and small groups looking for an immersive introduction to falconry.</p>
+                <div id="price-half-amount" class="mb-6">
+                    <span class="font-['Playfair_Display',serif] text-4xl font-bold text-[var(--color-primary)]">€350</span>
+                    <span class="text-[var(--color-text)] text-sm ml-1">/ group (up to 8)</span>
+                </div>
+                <ul id="half-day-features" class="space-y-3 text-sm text-[var(--color-text)] mb-8 flex-grow">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Approx. 2.5 hours
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Glove flying included
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        2 birds of prey featured
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Photography time
+                    </li>
+                </ul>
+                <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-primary)] text-white font-semibold py-3 px-6 rounded-sm hover:bg-[var(--color-secondary)] transition-colors duration-300 text-sm uppercase tracking-wide">
+                    Book This Package
+                </a>
+            </div>
+
+            
+            <div id="price-full-day" class="bg-[var(--color-primary)] rounded-sm shadow-xl p-8 border-t-4 border-[var(--color-secondary)] flex flex-col relative">
+                <div id="popular-badge" class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[var(--color-secondary)] text-white text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full">
+                    Most Popular
+                </div>
+                <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-white mb-2">Full-Day Experience</h3>
+                <p class="text-white text-sm mb-6 leading-relaxed opacity-90">The complete falconry journey — from morning briefing to afternoon free-flight demonstrations.</p>
+                <div id="price-full-amount" class="mb-6">
+                    <span class="font-['Playfair_Display',serif] text-4xl font-bold text-[var(--color-secondary)]">€650</span>
+                    <span class="text-white text-sm ml-1 opacity-90">/ group (up to 12)</span>
+                </div>
+                <ul id="full-day-features" class="space-y-3 text-sm text-white mb-8 flex-grow">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Full day (5–6 hours)
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Guided heritage walk
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        4+ species featured
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Lunch break included
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Free-flight demonstrations
+                    </li>
+                </ul>
+                <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-secondary)] text-white font-semibold py-3 px-6 rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-300 text-sm uppercase tracking-wide">
+                    Book This Package
+                </a>
+            </div>
+
+            
+            <div id="price-corporate" class="bg-[var(--color-bg)] rounded-sm shadow-md p-8 border-t-4 border-[var(--color-secondary)] flex flex-col">
+                <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-2">Corporate Bespoke</h3>
+                <p class="text-[var(--color-text)] text-sm mb-6 leading-relaxed">Fully tailored programmes for corporate away days, client events, and large groups of 20 or more.</p>
+                <div id="price-corporate-amount" class="mb-6">
+                    <span class="font-['Playfair_Display',serif] text-4xl font-bold text-[var(--color-primary)]">POA</span>
+                    <span class="text-[var(--color-text)] text-sm ml-1">/ custom quote</span>
+                </div>
+                <ul id="corporate-bespoke-features" class="space-y-3 text-sm text-[var(--color-text)] mb-8 flex-grow">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Groups of 20–100+
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Multiple falconers on-site
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Catering &amp; branding available
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-[var(--color-secondary)] flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414L8.414 12.172l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                        Dedicated event coordinator
+                    </li>
+                </ul>
+                <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-primary)] text-white font-semibold py-3 px-6 rounded-sm hover:bg-[var(--color-secondary)] transition-colors duration-300 text-sm uppercase tracking-wide">
+                    Request a Quote
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="testimonials-section" class="py-20 px-6 bg-[var(--color-bg)]">
+        <div id="testimonials-header" class="max-w-5xl mx-auto text-center mb-14">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">What Our Guests Say</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 leading-snug">
+                Trusted by Hundreds of Groups
+            </h2>
+        </div>
+        <div id="testimonials-grid" class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+
+            <blockquote id="testimonial-1" class="bg-[var(--color-bg-alt)] rounded-sm p-7 relative">
+                <svg class="w-8 h-8 text-[var(--color-secondary)] opacity-40 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+                <p class="text-[var(--color-text)] text-sm leading-relaxed italic mb-5">
+                    "We booked the full-day experience for our team of 18 and it was the most memorable corporate event we've ever done. Our team is still talking about it months later. Absolutely world-class."
+                </p>
+                <footer class="flex items-center gap-3" id="footer-block">
+                    <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0" aria-hidden="true" id="content-block-9">SM</div>
+                    <div id="content-block-10">
+                        <p class="font-semibold text-[var(--color-primary)] text-sm">Sarah M.</p>
+                        <p class="text-[var(--color-text)] text-xs">HR Director, Dublin</p>
+                    </div>
+                </footer>
+            </blockquote>
+
+            <blockquote id="testimonial-2" class="bg-[var(--color-bg-alt)] rounded-sm p-7 relative">
+                <svg class="w-8 h-8 text-[var(--color-secondary)] opacity-40 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+                <p class="text-[var(--color-text)] text-sm leading-relaxed italic mb-5">
+                    "We brought our three kids (aged 9, 12 and 15) and they were mesmerised the entire time. The falconers were so knowledgeable and patient. One of our best family experiences in Ireland, hands down."
+                </p>
+                <footer class="flex items-center gap-3" id="footer-block-2">
+                    <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0" aria-hidden="true" id="content-block-11">TO</div>
+                    <div id="content-block-12">
+                        <p class="font-semibold text-[var(--color-primary)] text-sm">Tom O'Brien</p>
+                        <p class="text-[var(--color-text)] text-xs">Family visitor, Cork</p>
+                    </div>
+                </footer>
+            </blockquote>
+
+            <blockquote id="testimonial-3" class="bg-[var(--color-bg-alt)] rounded-sm p-7 relative">
+                <svg class="w-8 h-8 text-[var(--color-secondary)] opacity-40 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"></path>
+                </svg>
+                <p class="text-[var(--color-text)] text-sm leading-relaxed italic mb-5">
+                    "I organised a surprise hen party here and it was a total hit! The ladies couldn't believe how magical it was — flying hawks in the Irish countryside feels like stepping back in time. Cannot recommend it highly enough."
+                </p>
+                <footer class="flex items-center gap-3" id="footer-block-3">
+                    <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0" aria-hidden="true" id="content-block-13">NF</div>
+                    <div id="content-block-14">
+                        <p class="font-semibold text-[var(--color-primary)] text-sm">Niamh F.</p>
+                        <p class="text-[var(--color-text)] text-xs">Event organiser, Galway</p>
+                    </div>
+                </footer>
+            </blockquote>
+
+        </div>
+    </section>
+
+    
+    <section id="faq-section" class="py-20 px-6 bg-[var(--color-bg-alt)]">
+        <div id="faq-header" class="max-w-3xl mx-auto text-center mb-14">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Planning Your Visit</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 leading-snug">
+                Frequently Asked Questions
+            </h2>
+        </div>
+        <div id="faq-list" class="max-w-3xl mx-auto space-y-5">
+
+            <details id="faq-age" class="bg-[var(--color-bg)] rounded-sm shadow-sm group">
+                <summary class="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-[var(--color-primary)] font-['Playfair_Display',serif] text-lg list-none">
+                    Is there a minimum age requirement?
+                    <svg class="w-5 h-5 text-[var(--color-secondary)] flex-shrink-0 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="px-6 pb-5 text-[var(--color-text)] text-sm leading-relaxed">
+                    Children aged 8 and above are welcome to participate in the hands-on glove flying. Younger children are welcome to attend and observe. All participants under 16 must be accompanied by a responsible adult.
+                </p>
+            </details>
+
+            <details id="faq-size" class="bg-[var(--color-bg)] rounded-sm shadow-sm group">
+                <summary class="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-[var(--color-primary)] font-['Playfair_Display',serif] text-lg list-none">
+                    What is the maximum group size?
+                    <svg class="w-5 h-5 text-[var(--color-secondary)] flex-shrink-0 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="px-6 pb-5 text-[var(--color-text)] text-sm leading-relaxed">
+                    Our standard packages accommodate up to 12 participants. For larger corporate events of 20 to 100+ guests, we bring in additional certified falconers to ensure everyone receives a personal, attentive experience. Please contact us for bespoke large-group arrangements.
+                </p>
+            </details>
+
+            <details id="faq-weather" class="bg-[var(--color-bg)] rounded-sm shadow-sm group">
+                <summary class="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-[var(--color-primary)] font-['Playfair_Display',serif] text-lg list-none">
+                    What happens if the weather is bad?
+                    <svg class="w-5 h-5 text-[var(--color-secondary)] flex-shrink-0 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="px-6 pb-5 text-[var(--color-text)] text-sm leading-relaxed">
+                    Our sessions run in most weather conditions — falconry is an outdoor pursuit and a little Irish rain adds to the atmosphere! In cases of severe weather or high winds that could endanger the birds or participants, we will reschedule at no additional cost to you.
+                </p>
+            </details>
+
+            <details id="faq-wear" class="bg-[var(--color-bg)] rounded-sm shadow-sm group">
+                <summary class="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-[var(--color-primary)] font-['Playfair_Display',serif] text-lg list-none">
+                    What should we wear and bring?
+                    <svg class="w-5 h-5 text-[var(--color-secondary)] flex-shrink-0 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="px-6 pb-5 text-[var(--color-text)] text-sm leading-relaxed">
+                    We recommend comfortable, outdoor clothing suitable for the season, and sturdy flat footwear (no heels). Waterproof jackets are advisable. All specialist equipment — gloves, lures, and hoods — is provided by us. Bring a camera and a sense of wonder!
+                </p>
+            </details>
+
+            <details id="faq-booking" class="bg-[var(--color-bg)] rounded-sm shadow-sm group">
+                <summary class="flex items-center justify-between px-6 py-5 cursor-pointer font-semibold text-[var(--color-primary)] font-['Playfair_Display',serif] text-lg list-none">
+                    How far in advance should we book?
+                    <svg class="w-5 h-5 text-[var(--color-secondary)] flex-shrink-0 group-open:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </summary>
+                <p class="px-6 pb-5 text-[var(--color-text)] text-sm leading-relaxed">
+                    We recommend booking at least 2–4 weeks in advance, particularly during the summer months and school holidays when demand is highest. For large corporate groups, we advise booking 6–8 weeks ahead to allow time for programme design and logistics.
+                </p>
+            </details>
+
+        </div>
+    </section>
+
+    
+    <section id="cta-section" class="py-20 px-6 bg-[var(--color-primary)] relative overflow-hidden">
+        <img src="https://zgmrpjtpvloizvlfewuq.supabase.co/storage/v1/object/public/project-images/b485c603-729e-42f6-8d40-af79aba70667/private-group-bookings-cta-raptor-landscape.png" alt="Sweeping aerial view of Irish midlands countryside at golden hour with a hawk in flight" class="absolute inset-0 w-full h-full object-cover opacity-20" loading="lazy" decoding="async">
+        <div id="cta-content" class="relative z-10 max-w-3xl mx-auto text-center">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Ready to Take Flight?</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-5xl font-bold text-white mt-2 mb-6 leading-tight">
+                Book Your Private Falconry Experience Today
+            </h2>
+            <p class="text-white text-lg opacity-90 max-w-xl mx-auto mb-8 leading-relaxed">
+                Get in touch with our team to discuss your group's needs, preferred dates, and any special requirements. We'll craft an experience you'll never forget.
+            </p>
+            <div id="cta-buttons" class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" data-page-link="contact" class="inline-block bg-[var(--color-secondary)] text-white font-semibold px-10 py-4 rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-300 tracking-wide uppercase text-sm">
+                    Get in Touch
+                </a>
+                <a href="/our-raptors" data-page-link="our-raptors" class="inline-block border-2 border-white text-white font-semibold px-10 py-4 rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-300 tracking-wide uppercase text-sm">
+                    Meet Our Birds
+                </a>
+            </div>
+            <div id="contact-details" class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 text-white opacity-80 text-sm">
+                <a href="tel:+353874126738" class="flex items-center gap-2 hover:opacity-100 transition-opacity" aria-label="Call us at +353 87 412 6738">
+                    <svg class="w-4 h-4 text-[var(--color-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    +353 87 412 6738
+                </a>
+                <a href="mailto:info@falconryinireland.com" class="flex items-center gap-2 hover:opacity-100 transition-opacity" aria-label="Email us at info@falconryinireland.com">
+                    <svg class="w-4 h-4 text-[var(--color-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    info@falconryinireland.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="related-experiences" class="py-20 px-6 bg-[var(--color-bg)]">
+        <div id="related-header" class="max-w-5xl mx-auto text-center mb-12">
+            <span class="text-[var(--color-secondary)] font-['Playfair_Display',serif] italic text-base tracking-wide">Explore More</span>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mt-2 leading-snug">
+                Other Falconry Experiences
+            </h2>
+        </div>
+        <div id="related-cards" class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+
+            <a href="/beginner-sessions" data-page-link="beginner-sessions" id="related-beginner" class="group relative block overflow-hidden rounded-sm shadow-lg">
+                <img src="https://zgmrpjtpvloizvlfewuq.supabase.co/storage/v1/object/public/project-images/b485c603-729e-42f6-8d40-af79aba70667/private-group-bookings-related-beginner-session.png" alt="Beginner learning to fly a hawk on their gloved arm in an Irish field" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-primary)] via-transparent to-transparent opacity-80" id="content-block-15"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6" id="beginner-sessions">
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-white mb-1">Beginner Sessions</h3>
+                    <p class="text-white text-sm opacity-90">Perfect introduction to the art of falconry for first-timers.</p>
+                    <span class="inline-flex items-center gap-1 text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-wide mt-3">
+                        Learn More
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="/heritage-walks" data-page-link="heritage-walks" id="related-heritage" class="group relative block overflow-hidden rounded-sm shadow-lg">
+                <img src="https://zgmrpjtpvloizvlfewuq.supabase.co/storage/v1/object/public/project-images/b485c603-729e-42f6-8d40-af79aba70667/private-group-bookings-related-heritage-walk.png" alt="Falconer walking through a misty ancient Irish landscape with a hawk on their glove" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-primary)] via-transparent to-transparent opacity-80" id="content-block-16"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6" id="heritage-walks">
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-white mb-1">Heritage Walks</h3>
+                    <p class="text-white text-sm opacity-90">Guided outdoor walks through traditional Irish landscapes with our birds.</p>
+                    <span class="inline-flex items-center gap-1 text-[var(--color-secondary)] text-xs font-semibold uppercase tracking-wide mt-3">
+                        Learn More
+                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer data-no-drag="true" class="bg-[var(--color-primary)] text-white" id="footer-block">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="content-block">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10" id="content-block-2">
+
+      
+      <div class="lg:col-span-1" id="content-block-3">
+        <div class="mb-4" id="content-block-4">
+          <span class="font-['Playfair_Display',serif] text-2xl font-bold tracking-wide text-white">
+            Falconry<br><span class="text-[var(--color-secondary)]">in Ireland</span>
+          </span>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed mb-5">
+          Celebrating the ancient and living art of falconry — a UNESCO Intangible Cultural Heritage — in the heart of Ireland's wild landscapes.
+        </p>
+        
+        <div class="flex gap-4 mt-2" id="content-block-5">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88V14.89H7.9v-2.89h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 17 22 12z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308C15.584 21.988 15.204 22 12 22s-3.584-.012-4.85-.07c-1.366-.062-2.633-.333-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.141 0-3.503.012-4.733.069-1.013.046-1.562.214-1.927.356-.484.188-.83.413-1.193.776-.363.363-.588.709-.776 1.193-.142.365-.31.914-.356 1.927-.057 1.23-.069 1.592-.069 4.733s.012 3.503.069 4.733c.046 1.013.214 1.562.356 1.927.188.484.413.83.776 1.193.363.363.709.588 1.193.776.365.142.914.31 1.927.356 1.23.057 1.592.069 4.733.069s3.503-.012 4.733-.069c1.013-.046 1.562-.214 1.927-.356.484-.188.83-.413 1.193-.776.363-.363.588-.709.776-1.193.142-.365.31-.914.356-1.927.057-1.23.069-1.592.069-4.733s-.012-3.503-.069-4.733c-.046-1.013-.214-1.562-.356-1.927a3.235 3.235 0 00-.776-1.193 3.235 3.235 0 00-1.193-.776c-.365-.142-.914-.31-1.927-.356-1.23-.057-1.592-.069-4.733-.069zm0 3.063a5.974 5.974 0 110 11.948A5.974 5.974 0 0112 7.028zm0 1.802a4.172 4.172 0 100 8.344 4.172 4.172 0 000-8.344zm6.406-3.187a1.44 1.44 0 110 2.88 1.44 1.44 0 010-2.88z"></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch us on YouTube" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      
+      <div id="experiences">
+        <h3 class="font-['Playfair_Display',serif] text-[var(--color-secondary)] text-base font-semibold uppercase tracking-widest mb-4">
+          Experiences
+        </h3>
+        <ul class="space-y-2 text-sm" id="list-block">
+          <li>
+            </li></ul></div></div></div></footer>
+  <script src="js/global.js"></script>
+  <script src="js/components.js"></script>
+</body></html>

@@ -1,0 +1,543 @@
+<!DOCTYPE html><html lang="en"><head>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Walks – Falconry in Ireland</title>
+    <meta name="description" content="Discover guided outdoor falconry heritage walks through Ireland's most breathtaking traditional landscapes. Fly birds of prey in misty valleys, ancient woodlands, and beside historic ruins.">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Inter:wght@300;400;500;600&amp;display=swap"></noscript>
+    
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js"></script>
+  <link rel="preload" as="style" href="css/global.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/global.css"></noscript>
+  <link rel="preload" as="image" href="img/c12b10d9-heritage-walks-hero-heritage-walk.webp" fetchpriority="high">
+</head>
+<body class="bg-[var(--color-bg)] font-['Inter',sans-serif] text-[var(--color-text)]">
+<header x-data="{}" data-no-drag="true" class="fixed top-0 left-0 right-0 z-50 w-full" style="background-color: var(--color-primary, #2C4A1E); border-bottom: 2px solid var(--color-secondary, #C8922A);" id="header-block">
+  
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:px-4 focus:py-2 focus:bg-white focus:text-gray-900 focus:rounded focus:text-sm">
+    Skip to content
+  </a>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="content-block">
+    <div class="flex items-center justify-between h-16 lg:h-20" id="content-block-2">
+
+      
+      <a href="/" data-page-link="index" class="flex items-center gap-3 group flex-shrink-0" aria-label="Falconry in Ireland — Home">
+        
+        <div class="w-9 h-9 flex-shrink-0" style="color: var(--color-secondary, #C8922A);" id="content-block-3">
+          <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M28 4c-1.2 0-2.3.4-3.1 1.1L10 16.5l2.5 1.5 5-3.5-2 6 3-1-1.5 5 2.5-1.5L18 30l3.5-2-1 5 3-3 1 4 2-5 2 3V8.5C28.5 6 28.3 4 28 4z"></path>
+            <path d="M8 22c0 5.5 4 10.5 9 12-3-3-4.5-7-4-11L8 22z" opacity=".7"></path>
+          </svg>
+        </div>
+        
+        <div class="flex flex-col leading-tight" id="content-block-4">
+          <span class="font-bold text-base lg:text-lg tracking-wide" style="color: #ffffff; font-family: 'Playfair Display', Georgia, serif;">
+            Falconry
+          </span>
+          <span class="text-xs font-medium tracking-widest uppercase" style="color: var(--color-secondary, #C8922A); font-family: 'Playfair Display', Georgia, serif;">
+            in Ireland
+          </span>
+        </div>
+      </a>
+
+      
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation" id="main-navigation">
+
+        
+        <div class="relative" x-data="{open: false}" @mouseenter="open = true" @mouseleave="open = false" id="content-block-5">
+          <div class="flex items-center" id="content-block-6">
+            <a href="/falconry-experiences" data-page-link="falconry-experiences" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+              Experiences
+            </a>
+            <svg class="w-4 h-4 ml-0.5 transition-transform duration-200 cursor-pointer flex-shrink-0" :class="{'rotate-180': open}" @click="open = !open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
+
+          
+          <div x-show="open" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 -translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 -translate-y-1" class="absolute top-full left-0 mt-1 rounded-md shadow-xl py-2 min-w-[220px] z-50" style="display:none; background-color: #1e3314; border: 1px solid var(--color-secondary, #C8922A); border-top: 2px solid var(--color-secondary, #C8922A);" id="content-block-7">
+            <a href="/beginner-sessions" data-page-link="beginner-sessions" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Beginner Sessions
+            </a>
+            <a href="/heritage-walks" data-page-link="heritage-walks" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Heritage Walks
+            </a>
+            <a href="/private-group-bookings" data-page-link="private-group-bookings" class="flex items-center gap-2 px-4 py-2.5 text-sm transition-colors duration-150" style="color: rgba(255,255,255,0.85); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.backgroundColor='rgba(200,146,42,0.15)'; this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='rgba(255,255,255,0.85)'">
+              <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: var(--color-secondary, #C8922A);"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              Private &amp; Group Bookings
+            </a>
+          </div>
+        </div>
+
+        
+        <a href="/falconry-heritage" data-page-link="falconry-heritage" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Heritage
+        </a>
+
+        
+        <a href="/our-raptors" data-page-link="our-raptors" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Our Raptors
+        </a>
+
+        
+        <a href="/about-us" data-page-link="about-us" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          About Us
+        </a>
+
+        
+        <a href="/blog" data-page-link="blog-listing" class="px-3 py-2 text-sm font-medium transition-colors duration-200 rounded" style="color: rgba(255,255,255,0.88); font-family: 'Playfair Display', Georgia, serif;" onmouseover="this.style.color='var(--color-secondary, #C8922A)'" onmouseout="this.style.color='rgba(255,255,255,0.88)'">
+          Blog
+        </a>
+
+        
+        </nav></div></div></header>
+
+<main id="main-content">
+
+    
+    <section id="hero-section" class="relative min-h-[80vh] flex items-end overflow-hidden">
+        <img fetchpriority="high" src="img/c12b10d9-heritage-walks-hero-heritage-walk.webp" alt="Falconer walking through misty Irish countryside with a raptor on their glove at dawn" class="absolute inset-0 w-full h-full object-cover" decoding="async">
+        <div id="hero-overlay" class="absolute inset-0 bg-[var(--color-primary)] opacity-60"></div>
+        <div id="hero-breadcrumb" class="absolute top-8 left-0 w-full px-6 md:px-16 z-10">
+            <nav aria-label="Breadcrumb" id="breadcrumb">
+                <ol class="flex items-center gap-2 text-sm text-white opacity-80" id="list-block">
+                    <li><a href="/" data-page-link="index" class="hover:opacity-100 underline underline-offset-2">Home</a></li>
+                    <li><span aria-hidden="true">/</span></li>
+                    <li><a href="/falconry-experiences" data-page-link="falconry-experiences" class="hover:opacity-100 underline underline-offset-2">Falconry Experiences</a></li>
+                    <li><span aria-hidden="true">/</span></li>
+                    <li class="font-semibold" aria-current="page">Heritage Walks</li>
+                </ol>
+            </nav>
+        </div>
+        <div id="hero-content" class="relative z-10 px-6 md:px-16 pb-16 md:pb-24 max-w-4xl">
+            <p class="text-[var(--color-secondary-light)] font-['Playfair_Display',serif] italic text-lg md:text-xl mb-3 tracking-wide">Guided Outdoor Falconry</p>
+            <h1 class="font-['Playfair_Display',serif] text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Heritage Walks
+            </h1>
+            <p class="text-white text-lg md:text-xl opacity-90 leading-relaxed max-w-2xl mb-8">
+                Step into centuries of tradition. Walk ancient Irish landscapes with birds of prey soaring overhead — a living connection to the island's falconry heritage.
+            </p>
+            <div id="hero-cta" class="flex flex-col sm:flex-row gap-4">
+                <a href="/contact" data-page-link="contact" class="inline-block bg-[var(--color-secondary)] text-white font-semibold px-8 py-4 rounded-sm hover:bg-[var(--color-secondary-dark)] transition-colors duration-200 text-center">
+                    Book a Walk
+                </a>
+                <a href="#walk-overview" class="inline-block border-2 border-white text-white font-semibold px-8 py-4 rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-200 text-center">
+                    Explore the Experience
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="walk-overview" class="py-20 md:py-28 px-6 md:px-16 bg-[var(--color-bg)]">
+        <div id="overview-inner" class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div id="overview-text">
+                <p class="text-[var(--color-secondary)] font-semibold uppercase tracking-widest text-sm mb-4">What to Expect</p>
+                <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] leading-tight mb-6">
+                    Where Ancient Craft Meets the Irish Wilderness
+                </h2>
+                <p class="text-[var(--color-text-light)] leading-relaxed mb-5 text-lg">
+                    Our Heritage Walks are immersive, unhurried journeys into the heart of Irish falconry tradition. Guided by experienced falconers, you'll explore dramatic landscapes — from bogland and ancient woodland to riversides and medieval ruins — accompanied by magnificent birds of prey.
+                </p>
+                <p class="text-[var(--color-text-light)] leading-relaxed mb-5">
+                    Unlike static demonstrations, these walks invite you to actively participate. You'll fly the birds, learn to read their behaviour, and understand the deep bond between falconer and raptor that has been cultivated in Ireland for over a thousand years.
+                </p>
+                <p class="text-[var(--color-text-light)] leading-relaxed">
+                    Each walk is carefully curated to reflect the cultural and natural heritage of Co. Offaly and the Shannon region — a landscape that has inspired Irish storytelling and tradition since the age of the High Kings.
+                </p>
+            </div>
+            <div id="overview-image" class="relative">
+                <img src="img/1c80ac36-heritage-walks-overview-walk-landscape.webp"s bogland and rolling hills in the background" alt="Falconer and guest walking through an Irish landscape with a hawk in flight" class="w-full h-[480px] object-cover rounded-sm shadow-xl" loading="lazy" decoding="async">
+                <div id="overview-badge" class="absolute -bottom-6 -left-6 bg-[var(--color-primary)] text-[var(--color-text-on-primary)] px-6 py-5 rounded-sm shadow-lg">
+                    <p class="font-['Playfair_Display',serif] text-2xl font-bold leading-none">1,000+</p>
+                    <p class="text-sm opacity-80 mt-1">Years of Irish Falconry</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="walk-types" class="py-20 md:py-28 px-6 md:px-16 bg-[var(--color-bg-alt)]">
+        <div id="walk-types-inner" class="max-w-6xl mx-auto">
+            <div id="walk-types-header" class="text-center mb-16">
+                <p class="text-[var(--color-secondary)] font-semibold uppercase tracking-widest text-sm mb-4">Our Signature Routes</p>
+                <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-5">Choose Your Heritage Walk</h2>
+                <p class="text-[var(--color-text-light)] max-w-2xl mx-auto text-lg">Each route is designed to connect you with a distinct facet of Ireland's falconry and cultural heritage.</p>
+            </div>
+            <div id="walk-cards" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                
+                <article id="walk-card-shannon" class="bg-[var(--color-bg)] rounded-sm overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden" id="content-block">
+                        <img src="img/cbbca5db-heritage-walks-walk-shannon-river.webp" alt="The River Shannon winding through green Irish meadows with a falcon in flight" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                        <div class="absolute top-4 left-4 bg-[var(--color-secondary)] text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm" id="uppercase">Most Popular</div>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1" id="the-shannon">
+                        <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-3">The Shannon Falconer's Trail</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed mb-4 flex-1">Walk the banks of the mighty River Shannon as your hawk circles above the water meadows. This gentle, scenic route traces the paths once walked by medieval Irish nobility who prized their falcons above all other possessions.</p>
+                        <ul id="trail-shannon-details" class="text-sm text-[var(--color-text-light)] space-y-2 mb-5">
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">⏱</span> Duration: 2.5 hours</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">👥</span> Max: 8 participants</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">📍</span> Shannonbridge, Co. Offaly</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">🦅</span> Harris Hawks &amp; Buzzards</li>
+                        </ul>
+                        <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-primary)] text-white font-semibold py-3 px-4 rounded-sm hover:bg-[var(--color-primary-dark)] transition-colors duration-200 text-sm">
+                            Enquire &amp; Book
+                        </a>
+                    </div>
+                </article>
+
+                
+                <article id="walk-card-clonmacnoise" class="bg-[var(--color-bg)] rounded-sm overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden" id="content-block-2">
+                        <img src="img/5ed0f693-heritage-walks-walk-clonmacnoise-ruins.webp" alt="Ancient Clonmacnoise monastic ruins with a falcon perched on a Celtic high cross" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-1" id="the-clonmacnoise">
+                        <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-3">The Clonmacnoise Monastic Walk</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed mb-4 flex-1">Wander through one of Ireland's most sacred ancient sites alongside a peregrine falcon. This historically rich walk explores the relationship between early Christian Ireland and the falconry traditions brought by noble travellers and Viking traders.</p>
+                        <ul id="trail-clonmacnoise-details" class="text-sm text-[var(--color-text-light)] space-y-2 mb-5">
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">⏱</span> Duration: 3 hours</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">👥</span> Max: 6 participants</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">📍</span> Clonmacnoise, Co. Offaly</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">🦅</span> Peregrine Falcons</li>
+                        </ul>
+                        <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-primary)] text-white font-semibold py-3 px-4 rounded-sm hover:bg-[var(--color-primary-dark)] transition-colors duration-200 text-sm">
+                            Enquire &amp; Book
+                        </a>
+                    </div>
+                </article>
+
+                
+                <article id="walk-card-bogland" class="bg-[var(--color-bg)] rounded-sm overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col">
+                    <div class="relative h-56 overflow-hidden" id="content-block-3">
+                        <img src="img/a9fb41b2-heritage-walks-walk-offaly-bogland.webp" alt="Open bogland in Co. Offaly at sunrise with an eagle soaring above" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+                    </div>
+                    <div class="p-6 flex flex-col flex-1" id="the-bogland">
+                        <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-3">The Bogland Eagle Experience</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed mb-4 flex-1">Ireland's ancient boglands are among the most primeval landscapes in Europe. Experience the raw power of a golden eagle or red-tailed hawk as it cuts through the vast midland skies — an encounter you will never forget.</p>
+                        <ul id="trail-bogland-details" class="text-sm text-[var(--color-text-light)] space-y-2 mb-5">
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">⏱</span> Duration: 3.5 hours</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">👥</span> Max: 4 participants</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">📍</span> Boora Bog, Co. Offaly</li>
+                            <li class="flex items-center gap-2"><span class="text-[var(--color-secondary)] font-bold">🦅</span> Golden Eagles &amp; Red-tails</li>
+                        </ul>
+                        <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-primary)] text-white font-semibold py-3 px-4 rounded-sm hover:bg-[var(--color-primary-dark)] transition-colors duration-200 text-sm">
+                            Enquire &amp; Book
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="included-section" class="py-20 md:py-28 px-6 md:px-16 bg-[var(--color-bg)]">
+        <div id="included-inner" class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div id="included-image-block" class="order-2 lg:order-1 relative">
+                <img src="img/4d9c1107-heritage-walks-included-glove-hawk.webp"s weathered leather gauntlet glove with a beautiful Harris hawk perched confidently, bokeh green Irish countryside background, warm natural lighting, detailed macro photography, textures of the leather and hawk feathers visible, earthy tones" alt="Harris hawk perched on a traditional falconer's leather glove" class="w-full h-[440px] object-cover rounded-sm shadow-lg" loading="lazy" decoding="async">
+                <div id="included-quote-block" class="absolute -bottom-8 -right-8 hidden md:block bg-[var(--color-secondary)] text-white p-6 max-w-xs rounded-sm shadow-xl">
+                    <p class="font-['Playfair_Display',serif] italic text-base leading-snug">"To see a hawk take flight from your own arm — that is to touch something timeless."</p>
+                    <p class="text-sm mt-3 opacity-80 font-semibold">— Seán, Lead Falconer</p>
+                </div>
+            </div>
+            <div id="included-text-block" class="order-1 lg:order-2">
+                <p class="text-[var(--color-secondary)] font-semibold uppercase tracking-widest text-sm mb-4">All Walks Include</p>
+                <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-8 leading-tight">Everything You Need for an Unforgettable Experience</h2>
+                <ul id="included-list" class="space-y-5">
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-10 h-10 bg-[var(--color-primary)] text-white rounded-full flex items-center justify-center font-bold text-lg" aria-hidden="true">✓</span>
+                        <div id="content-block-4">
+                            <p class="font-semibold text-[var(--color-primary)] mb-1">Expert Falconer Guide</p>
+                            <p class="text-[var(--color-text-light)] text-sm leading-relaxed">A fully licenced, experienced falconer leads every walk, sharing stories of Ireland's falconry heritage throughout the journey.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-10 h-10 bg-[var(--color-primary)] text-white rounded-full flex items-center justify-center font-bold text-lg" aria-hidden="true">✓</span>
+                        <div id="content-block-5">
+                            <p class="font-semibold text-[var(--color-primary)] mb-1">Hands-On Flying Time</p>
+                            <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Every participant gets to fly the birds — not just watch. You'll learn to call them back to the glove and experience real falconry technique.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-10 h-10 bg-[var(--color-primary)] text-white rounded-full flex items-center justify-center font-bold text-lg" aria-hidden="true">✓</span>
+                        <div id="content-block-6">
+                            <p class="font-semibold text-[var(--color-primary)] mb-1">Leather Falconry Gloves</p>
+                            <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Traditional leather gauntlets provided for all participants. No special equipment or experience is required.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-10 h-10 bg-[var(--color-primary)] text-white rounded-full flex items-center justify-center font-bold text-lg" aria-hidden="true">✓</span>
+                        <div id="content-block-7">
+                            <p class="font-semibold text-[var(--color-primary)] mb-1">Heritage Narrative</p>
+                            <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Detailed storytelling about local history, UNESCO recognition of falconry, and the cultural role of birds of prey in Gaelic Ireland.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <span class="flex-shrink-0 w-10 h-10 bg-[var(--color-primary)] text-white rounded-full flex items-center justify-center font-bold text-lg" aria-hidden="true">✓</span>
+                        <div id="content-block-8">
+                            <p class="font-semibold text-[var(--color-primary)] mb-1">Photography Welcome</p>
+                            <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Bring your camera. Our guides will help you capture stunning images of the birds in flight against Ireland's iconic landscapes.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="gallery-section" class="py-16 px-6 md:px-16 bg-[var(--color-primary)]">
+        <div id="gallery-header" class="max-w-6xl mx-auto text-center mb-10">
+            <p class="text-[var(--color-secondary-light)] font-semibold uppercase tracking-widest text-sm mb-3">Gallery</p>
+            <h2 class="font-['Playfair_Display',serif] text-3xl font-bold text-white">Moments From the Field</h2>
+        </div>
+        <div id="gallery-grid" class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3">
+            <figure id="gallery-img-1" class="overflow-hidden rounded-sm">
+                <img src="img/7626fd0a-heritage-walks-gallery-hawk-flight.webp" alt="Harris hawk in full flight above Irish woodland" class="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </figure>
+            <figure id="gallery-img-2" class="overflow-hidden rounded-sm">
+                <img src="img/44e8aff5-heritage-walks-gallery-falconer-walk.webp" alt="Female falconer walking a rural Irish lane with a barn owl on her glove" class="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </figure>
+            <figure id="gallery-img-3" class="overflow-hidden rounded-sm">
+                <img src="img/49db94f8-heritage-walks-gallery-guest-bird.webp" alt="Young visitor experiencing a hawk landing on their glove during a heritage walk" class="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </figure>
+            <figure id="gallery-img-4" class="overflow-hidden rounded-sm">
+                <img src="img/cdc3a749-heritage-walks-gallery-ruin-falcon.webp" alt="Peregrine falcon perched on ancient Irish monastic ruins at dusk" class="w-full h-48 md:h-64 object-cover hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async">
+            </figure>
+        </div>
+    </section>
+
+    
+    <section id="practical-info" class="py-20 md:py-28 px-6 md:px-16 bg-[var(--color-bg-alt)]">
+        <div id="practical-inner" class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div id="practical-text">
+                <p class="text-[var(--color-secondary)] font-semibold uppercase tracking-widest text-sm mb-4">Good to Know</p>
+                <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)] mb-8 leading-tight">Before You Lace Up Your Boots</h2>
+                <div id="faq-list" class="space-y-6">
+                    <div id="faq-fitness" class="border-b border-[var(--color-border)] pb-6">
+                        <h3 class="font-semibold text-[var(--color-primary)] mb-2">Do I need to be physically fit?</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Our walks are gentle and suitable for most fitness levels. Routes are walked at a leisurely pace with frequent stops to fly the birds. We recommend comfortable, waterproof footwear and layered clothing.</p>
+                    </div>
+                    <div id="faq-age" class="border-b border-[var(--color-border)] pb-6">
+                        <h3 class="font-semibold text-[var(--color-primary)] mb-2">What age can participate?</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Children aged 8 and above can participate when accompanied by an adult. Younger children are welcome to attend and observe. All participants under 16 must be with a guardian.</p>
+                    </div>
+                    <div id="faq-weather" class="border-b border-[var(--color-border)] pb-6">
+                        <h3 class="font-semibold text-[var(--color-primary)] mb-2">What happens in bad weather?</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed">This is Ireland — light rain only adds to the atmosphere! We walk in most weather conditions. In the event of severe weather (storms, thunder), we will reschedule at no cost to you.</p>
+                    </div>
+                    <div id="faq-season" class="border-b border-[var(--color-border)] pb-6">
+                        <h3 class="font-semibold text-[var(--color-primary)] mb-2">When is the best season?</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Heritage Walks run year-round. Autumn (September–November) is particularly atmospheric, with golden foliage and low mist. Spring brings wildflowers and nesting activity. Winter walks have a dramatic, quiet beauty all their own.</p>
+                    </div>
+                    <div id="faq-private" class="pb-2">
+                        <h3 class="font-semibold text-[var(--color-primary)] mb-2">Can I book a private walk?</h3>
+                        <p class="text-[var(--color-text-light)] text-sm leading-relaxed">Absolutely. Private Heritage Walks can be arranged for couples, families, or small groups. We also offer bespoke corporate and event experiences. See our <a href="/private-group-bookings" data-page-link="private-group-bookings" class="text-[var(--color-primary)] font-semibold underline underline-offset-2 hover:opacity-75">Private &amp; Group Bookings</a> page for details.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="practical-sidebar" class="flex flex-col gap-6">
+                
+                <div id="pricing-card" class="bg-[var(--color-primary)] text-[var(--color-text-on-primary)] rounded-sm p-8 shadow-lg">
+                    <p class="text-[var(--color-secondary-light)] font-semibold uppercase tracking-widest text-xs mb-2">Pricing</p>
+                    <h3 class="font-['Playfair_Display',serif] text-2xl font-bold mb-6">Walk Prices</h3>
+                    <ul id="pricing-list" class="space-y-4 mb-6">
+                        <li class="flex justify-between items-center border-b border-white border-opacity-20 pb-4">
+                            <span class="text-sm">Shannon Falconer's Trail</span>
+                            <span class="font-bold text-[var(--color-secondary-light)]">€75 / person</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-white border-opacity-20 pb-4">
+                            <span class="text-sm">Clonmacnoise Monastic Walk</span>
+                            <span class="font-bold text-[var(--color-secondary-light)]">€90 / person</span>
+                        </li>
+                        <li class="flex justify-between items-center pb-2">
+                            <span class="text-sm">Bogland Eagle Experience</span>
+                            <span class="font-bold text-[var(--color-secondary-light)]">€110 / person</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs opacity-70 mb-6">All prices include equipment, expert guide, and hands-on flying time. Group discounts available.</p>
+                    <a href="/contact" data-page-link="contact" class="block text-center bg-[var(--color-secondary)] text-white font-semibold py-3 px-6 rounded-sm hover:bg-[var(--color-secondary-dark)] transition-colors duration-200">
+                        Book Now
+                    </a>
+                </div>
+                
+                <div id="season-card" class="bg-[var(--color-bg)] rounded-sm p-8 shadow border border-[var(--color-border)]">
+                    <p class="text-[var(--color-secondary)] font-semibold uppercase tracking-widest text-xs mb-2">Seasonal Calendar</p>
+                    <h3 class="font-['Playfair_Display',serif] text-xl font-bold text-[var(--color-primary)] mb-5">Walk Availability</h3>
+                    <ul id="season-list" class="space-y-3">
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-[var(--color-text-light)]">Spring (Mar–May)</span>
+                            <span class="bg-green-100 text-green-800 font-semibold text-xs px-3 py-1 rounded-full">Available</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-[var(--color-text-light)]">Summer (Jun–Aug)</span>
+                            <span class="bg-green-100 text-green-800 font-semibold text-xs px-3 py-1 rounded-full">Available</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-[var(--color-text-light)]">Autumn (Sep–Nov)</span>
+                            <span class="bg-[var(--color-secondary)] text-white font-semibold text-xs px-3 py-1 rounded-full">Peak Season</span>
+                        </li>
+                        <li class="flex items-center justify-between text-sm">
+                            <span class="text-[var(--color-text-light)]">Winter (Dec–Feb)</span>
+                            <span class="bg-green-100 text-green-800 font-semibold text-xs px-3 py-1 rounded-full">Available</span>
+                        </li>
+                    </ul>
+                    <p class="text-xs text-[var(--color-text-muted)] mt-5">Walks run weekends year-round, and weekdays by arrangement. Public holidays may have limited availability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="testimonials-section" class="py-20 md:py-24 px-6 md:px-16 bg-[var(--color-bg)]">
+        <div id="testimonials-inner" class="max-w-6xl mx-auto">
+            <div id="testimonials-header" class="text-center mb-14">
+                <p class="text-[var(--color-secondary)] font-semibold uppercase tracking-widest text-sm mb-4">Guest Stories</p>
+                <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-[var(--color-primary)]">What Walkers Are Saying</h2>
+            </div>
+            <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <blockquote id="testimonial-1" class="bg-[var(--color-bg-alt)] rounded-sm p-8 relative">
+                    <span class="font-['Playfair_Display',serif] text-6xl text-[var(--color-secondary)] opacity-30 absolute top-4 left-6 leading-none" aria-hidden="true">"</span>
+                    <p class="text-[var(--color-text-light)] leading-relaxed italic mb-6 mt-4 relative z-10">The Clonmacnoise walk was unlike anything I've ever done. Having a peregrine falcon circle above those ancient ruins while our guide told us the history — it gave me chills. Pure magic.</p>
+                    <footer class="flex items-center gap-3" id="footer-block">
+                        <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0" aria-hidden="true" id="content-block-9">CL</div>
+                        <div id="content-block-10">
+                            <cite class="font-semibold text-[var(--color-primary)] not-italic text-sm block">Catherine L.</cite>
+                            <p class="text-xs text-[var(--color-text-muted)]">Dublin, Ireland</p>
+                        </div>
+                    </footer>
+                </blockquote>
+                <blockquote id="testimonial-2" class="bg-[var(--color-bg-alt)] rounded-sm p-8 relative">
+                    <span class="font-['Playfair_Display',serif] text-6xl text-[var(--color-secondary)] opacity-30 absolute top-4 left-6 leading-none" aria-hidden="true">"</span>
+                    <p class="text-[var(--color-text-light)] leading-relaxed italic mb-6 mt-4 relative z-10">We came from Toronto specifically to do the Bogland Eagle walk. It exceeded every expectation. The landscape, the birds, the knowledge of the guide — utterly world class. Already planning our return.</p>
+                    <footer class="flex items-center gap-3" id="footer-block-2">
+                        <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0" aria-hidden="true" id="content-block-11">MR</div>
+                        <div id="content-block-12">
+                            <cite class="font-semibold text-[var(--color-primary)] not-italic text-sm block">Michael R.</cite>
+                            <p class="text-xs text-[var(--color-text-muted)]">Ontario, Canada</p>
+                        </div>
+                    </footer>
+                </blockquote>
+                <blockquote id="testimonial-3" class="bg-[var(--color-bg-alt)] rounded-sm p-8 relative">
+                    <span class="font-['Playfair_Display',serif] text-6xl text-[var(--color-secondary)] opacity-30 absolute top-4 left-6 leading-none" aria-hidden="true">"</span>
+                    <p class="text-[var(--color-text-light)] leading-relaxed italic mb-6 mt-4 relative z-10">I booked the Shannon Trail for my parents' anniversary. Seán made it so personal and relaxed. My 72-year-old mother had a hawk land on her arm and she hasn't stopped talking about it since!</p>
+                    <footer class="flex items-center gap-3" id="footer-block-3">
+                        <div class="w-10 h-10 rounded-full bg-[var(--color-primary)] flex items-center justify-center text-white font-bold text-sm flex-shrink-0" aria-hidden="true" id="content-block-13">NM</div>
+                        <div id="content-block-14">
+                            <cite class="font-semibold text-[var(--color-primary)] not-italic text-sm block">Niamh M.</cite>
+                            <p class="text-xs text-[var(--color-text-muted)]">Galway, Ireland</p>
+                        </div>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="related-experiences" class="py-20 px-6 md:px-16 bg-[var(--color-primary)]">
+        <div id="related-inner" class="max-w-6xl mx-auto text-center mb-12">
+            <p class="text-[var(--color-secondary-light)] font-semibold uppercase tracking-widest text-sm mb-4">Explore More</p>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-white mb-5">Other Falconry Experiences</h2>
+            <p class="text-white opacity-80 max-w-xl mx-auto">Our Heritage Walks are just one way to connect with the ancient art of falconry. Discover the full range of experiences we offer.</p>
+        </div>
+        <div id="related-cards" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="/beginner-sessions" data-page-link="beginner-sessions" id="related-beginner" class="group bg-white bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 rounded-sm p-8 text-white border border-white border-opacity-20 flex flex-col gap-3">
+                <span class="text-4xl" aria-hidden="true">🪶</span>
+                <h3 class="font-['Playfair_Display',serif] text-xl font-bold">Beginner Sessions</h3>
+                <p class="text-sm opacity-80 leading-relaxed">New to falconry? Our introductory sessions are the perfect starting point. Learn the basics on your first visit.</p>
+                <span class="text-[var(--color-secondary-light)] font-semibold text-sm mt-2 group-hover:underline">Learn more →</span>
+            </a>
+            <a href="/private-group-bookings" data-page-link="private-group-bookings" id="related-private" class="group bg-white bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 rounded-sm p-8 text-white border border-white border-opacity-20 flex flex-col gap-3">
+                <span class="text-4xl" aria-hidden="true">🏰</span>
+                <h3 class="font-['Playfair_Display',serif] text-xl font-bold">Private &amp; Group Bookings</h3>
+                <p class="text-sm opacity-80 leading-relaxed">Tailored experiences for families, corporate events, and special occasions. Your own private falconry adventure awaits.</p>
+                <span class="text-[var(--color-secondary-light)] font-semibold text-sm mt-2 group-hover:underline">Learn more →</span>
+            </a>
+            <a href="/falconry-heritage" data-page-link="falconry-heritage" id="related-heritage" class="group bg-white bg-opacity-10 hover:bg-opacity-20 transition-all duration-300 rounded-sm p-8 text-white border border-white border-opacity-20 flex flex-col gap-3">
+                <span class="text-4xl" aria-hidden="true">📜</span>
+                <h3 class="font-['Playfair_Display',serif] text-xl font-bold">Falconry Heritage</h3>
+                <p class="text-sm opacity-80 leading-relaxed">Dive deeper into the history and UNESCO recognition of falconry. Discover Ireland's unique place in this living tradition.</p>
+                <span class="text-[var(--color-secondary-light)] font-semibold text-sm mt-2 group-hover:underline">Learn more →</span>
+            </a>
+        </div>
+    </section>
+
+    
+    <section id="cta-banner" class="relative py-24 px-6 md:px-16 overflow-hidden">
+        <img src="img/45759bb1-heritage-walks-cta-raptor-sky.webp" alt="Peregrine falcon diving against a dramatic Irish sky" class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async">
+        <div id="cta-overlay" class="absolute inset-0 bg-[var(--color-primary)] opacity-75"></div>
+        <div id="cta-content" class="relative z-10 text-center max-w-3xl mx-auto">
+            <p class="text-[var(--color-secondary-light)] font-semibold uppercase tracking-widest text-sm mb-4">Ready to Walk With Eagles?</p>
+            <h2 class="font-['Playfair_Display',serif] text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
+                Book Your Heritage Walk Today
+            </h2>
+            <p class="text-white opacity-90 text-lg mb-10 leading-relaxed">
+                Join us in the Irish countryside and experience falconry as it has been practised for over a thousand years. Every walk is an encounter you will carry with you long after you leave.
+            </p>
+            <div id="cta-buttons" class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/contact" data-page-link="contact" class="inline-block bg-[var(--color-secondary)] text-white font-bold px-10 py-4 rounded-sm hover:bg-[var(--color-secondary-dark)] transition-colors duration-200">
+                    Book a Walk
+                </a>
+                <a href="/our-raptors" data-page-link="our-raptors" class="inline-block border-2 border-white text-white font-bold px-10 py-4 rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-colors duration-200">
+                    Meet Our Raptors
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+<footer data-no-drag="true" class="bg-[var(--color-primary)] text-white" id="footer-block">
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="content-block">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10" id="content-block-2">
+
+      
+      <div class="lg:col-span-1" id="content-block-3">
+        <div class="mb-4" id="content-block-4">
+          <span class="font-['Playfair_Display',serif] text-2xl font-bold tracking-wide text-white">
+            Falconry<br><span class="text-[var(--color-secondary)]">in Ireland</span>
+          </span>
+        </div>
+        <p class="text-sm text-gray-300 leading-relaxed mb-5">
+          Celebrating the ancient and living art of falconry — a UNESCO Intangible Cultural Heritage — in the heart of Ireland's wild landscapes.
+        </p>
+        
+        <div class="flex gap-4 mt-2" id="content-block-5">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88V14.89H7.9v-2.89h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 17 22 12z"></path>
+            </svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308C15.584 21.988 15.204 22 12 22s-3.584-.012-4.85-.07c-1.366-.062-2.633-.333-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.333-2.633 1.308-3.608.975-.975 2.242-1.246 3.608-1.308C8.416 2.175 8.796 2.163 12 2.163zm0 1.802c-3.141 0-3.503.012-4.733.069-1.013.046-1.562.214-1.927.356-.484.188-.83.413-1.193.776-.363.363-.588.709-.776 1.193-.142.365-.31.914-.356 1.927-.057 1.23-.069 1.592-.069 4.733s.012 3.503.069 4.733c.046 1.013.214 1.562.356 1.927.188.484.413.83.776 1.193.363.363.709.588 1.193.776.365.142.914.31 1.927.356 1.23.057 1.592.069 4.733.069s3.503-.012 4.733-.069c1.013-.046 1.562-.214 1.927-.356.484-.188.83-.413 1.193-.776.363-.363.588-.709.776-1.193.142-.365.31-.914.356-1.927.057-1.23.069-1.592.069-4.733s-.012-3.503-.069-4.733c-.046-1.013-.214-1.562-.356-1.927a3.235 3.235 0 00-.776-1.193 3.235 3.235 0 00-1.193-.776c-.365-.142-.914-.31-1.927-.356-1.23-.057-1.592-.069-4.733-.069zm0 3.063a5.974 5.974 0 110 11.948A5.974 5.974 0 0112 7.028zm0 1.802a4.172 4.172 0 100 8.344 4.172 4.172 0 000-8.344zm6.406-3.187a1.44 1.44 0 110 2.88 1.44 1.44 0 010-2.88z"></path>
+            </svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="Watch us on YouTube" class="text-gray-300 hover:text-[var(--color-secondary)] transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      
+      <div id="experiences">
+        <h3 class="font-['Playfair_Display',serif] text-[var(--color-secondary)] text-base font-semibold uppercase tracking-widest mb-4">
+          Experiences
+        </h3>
+        <ul class="space-y-2 text-sm" id="list-block">
+          <li>
+            </li></ul></div></div></div></footer>
+  <script src="js/global.js"></script>
+  <script src="js/components.js"></script>
+</body></html>
